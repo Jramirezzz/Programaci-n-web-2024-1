@@ -5,7 +5,7 @@ import {createRoot} from 'react-dom'
 const appContainer = document.getElementById("app")
 const root = createRoot(appContainer)
 
-
+// two differents ways to render a component 
 function App (){
   return(
     <>
@@ -15,6 +15,7 @@ function App (){
     </>
   )
 }
+
 
 // function App (){
 //   return[
