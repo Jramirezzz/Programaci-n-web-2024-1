@@ -1,0 +1,12 @@
+.bigcard {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin: auto;
+  }
