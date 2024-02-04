@@ -1,6 +1,7 @@
 import React from "react"
 
 
+
 export function CardType2 (){
 
     const CardInfo = [
@@ -13,14 +14,13 @@ export function CardType2 (){
 
   CardInfo.forEach((CardInfos) => {
     results.push(
-      <div>
+      <div className="ContainerImgCardType2">
         <img src ={CardInfos.img} alt="card"/>
-        <h4>{CardInfos.Title}</h4>
-        <h3> {CardInfos.Description}</h3>
+        <h4 className="TitleCardType2">{CardInfos.Title}</h4>
       </div>,
     );
   });
 
-  return <div>{results}</div>;
+  return <div className="CardType2Container" >{results}</div>;
   }
   
