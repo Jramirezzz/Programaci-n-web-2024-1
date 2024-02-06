@@ -17,6 +17,7 @@ export default function App (){
       <CardType5/>
       <CardType4/>
       <CardType3/>
+     
       <CardType2/>
       <Footer/>
       </>

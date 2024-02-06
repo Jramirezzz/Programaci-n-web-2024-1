@@ -13,17 +13,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.CardType2Container {
-  display: flex;
-  justify-content: space-around;
+
+.TitleCardType3{
+  position: absolute; 
+ top: 1px¿;
   
  
+}
+.ContainerCardType3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  margin-bottom: 300px;
+  
+}
+
+.GridImgCardType3 {
+  overflow: hidden; 
+}
+
+.ImgCardType3 img {
+  text-align: center;
+  max-width: 100%; 
+  height: auto; 
+}
+
+.CardType2Container {
+  
+  display: flex;
+  justify-content: center;
+  
+  
 }
 
 .ContainerImgCardType2{
   position: relative;
   text-align: center;
+  max-width: 100%;
+ 
+  
+  
 }
+
 .TitleCardType2{
   position: absolute;
   top: 70px;
