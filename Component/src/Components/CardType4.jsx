@@ -7,23 +7,27 @@ const CardInfo = [
 ]
 
 
-export function CardType4 (){
-  return(
-    <div className="">
-    {CardInfo.map(function(CardInfos){
-  return(
-    <div className="ContainerCardType4">
-        <img className="ImgCardType4" src ={CardInfos.img} alt="card"/>
-        <h6 className="SectionCardType4" >{CardInfos.Section}</h6>
-        <h4 className="TitleCardType4" >{CardInfos.Title}</h4>
-        <h3 className="DescriptionCardType4" >{CardInfos.Description}</h3>
-        <button className="LinkCardType4" >{CardInfos.Link}</button>
-      </div>
-  )
-    })}
+export function CardType4() {
+  return (
+    <div className="BigContainerCardType4">
+      {CardInfo.map(function (CardInfos) {
+        return (
+          <div className="ContainerCardType4">
+            <div className="TextContainer">
+              <h6 className="SectionCardType4">{CardInfos.Section}</h6>
+              <h4 className="TitleCardType4">{CardInfos.Title}</h4>
+              <h3 className="DescriptionCardType4">{CardInfos.Description}</h3>
+              <button className="LinkCardType4">{CardInfos.Link}</button>
+            </div>
+            <div className="ImageContainer">
+              <img className="ImgCardType4" src={CardInfos.img} alt="card" />
+            </div>
+          </div>
+        );
+      })}
     </div>
-  )
-    }
+  );
+}
     
 
 
