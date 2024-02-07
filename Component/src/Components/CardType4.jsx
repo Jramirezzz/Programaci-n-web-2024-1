@@ -20,7 +20,7 @@ export function CardType4() {
               <button className="LinkCardType4">{CardInfos.Link}</button>
             </div>
             <div className="ImageContainer">
-              <img className="ImgCardType4" src={CardInfos.img} alt="card" />
+              <img style={{width:"500px",height:"270px",marginTop:"26px"}} className="ImgCardType4" src={CardInfos.img} alt="card" />
             </div>
           </div>
         );

@@ -13,6 +13,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.BigContainerCardType6{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.BigContainerCardType5{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .BigContainerCardType4 {
   display: flex;
   flex-direction: column; /* Alinea los elementos en columna */
@@ -23,9 +36,11 @@
   display: flex;
   align-items: center; 
   width: 1100px; 
+  height: 250px;
   margin-bottom: 20px; 
   background-color: #0f0f0f;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .TextContainer {
@@ -91,6 +106,29 @@
   left: 0;
  
 }
+
+.BigContainerCardType1{
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  
+}
+
+.ContainerCardType1 {
+  flex: 1; 
+  max-width:416px;
+  text-align: center; 
+  background-color: #0f0f0f;
+  text-align: start;
+}
+
+.TitleCardType1{
+  padding-left:10px;
+}
+.DescriptionCardType1{
+  padding-left:10px;
+}
+
 
 .FirstFooter {
   display: flex;

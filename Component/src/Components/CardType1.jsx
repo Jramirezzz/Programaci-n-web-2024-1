@@ -9,17 +9,17 @@ const CardInfo = [
 
 export function CardType1 (){
 return(
-  <>
+  <div className="BigContainerCardType1">
   {CardInfo.map(function(CardInfos){
 return(
-  <div>
-        <img src ={CardInfos.img} alt="card"/>
-        <h4>{CardInfos.Title}</h4>
-        <h3> {CardInfos.Description}</h3>
+  <div className="ContainerCardType1">
+        <img className="ImgCardType1"style={{width:"416px", height:"230px"}}src ={CardInfos.img} alt="card"/>
+        <h4 className="TitleCardType1">{CardInfos.Title}</h4>
+        <h3 className="DescriptionCardType1"> {CardInfos.Description}</h3>
       </div>
 )
   })}
-  </>
+  </div>
 )
   }
   
