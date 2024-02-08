@@ -1,7 +1,7 @@
 import React from "react"
 import { CardType1 } from "./Components/CardType1"
 import { NavBar } from "./Components/navbar"
-
+import {Carousel} from "./Components/CarouseImg"
 import { Footer } from "./Components/Footer"
 import { CardType2 } from "./Components/CardType2"
 import { CardType3 } from "./Components/CardType3"
@@ -14,6 +14,7 @@ export default function App (){
     return(
       <>
       <NavBar/>
+      <Carousel/>
       <CardType1/>
       <CardType6/>
       <h1>Gama Ducati</h1>
