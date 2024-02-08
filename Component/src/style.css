@@ -1,0 +1,257 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.BigContainerCardType6{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.BigContainerCardType5{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.BigContainerCardType4 {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.ContainerCardType4 {
+  display: flex;
+  align-items: center; 
+  width: 1100px; 
+  height: 250px;
+  margin-bottom: 20px; 
+  background-color: #0f0f0f;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+.TextContainer {
+  flex: 1; 
+  padding: 0 20px; 
+}
+
+.ImageContainer {
+  width: 500px;
+}
+
+.ImgCardType4 {
+  width: 100%;
+  height: auto;
+}
+
+
+.TitleCardType3{
+  position: absolute; 
+ top: 1px¿;
+  
+ 
+}
+.ContainerCardType3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  margin-bottom: 300px;
+  
+}
+
+.GridImgCardType3 {
+  overflow: hidden; 
+}
+
+.ImgCardType3 img {
+  text-align: center;
+  max-width: 100%; 
+  height: auto; 
+}
+
+.CardType2Container {
+  
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.ContainerImgCardType2{
+  position: relative;
+  text-align: center;
+  max-width: 100%;
+ 
+  
+  
+}
+
+.TitleCardType2{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  left: 0;
+ 
+}
+
+.BigContainerCardType1{
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  
+}
+
+.ContainerCardType1 {
+  flex: 1; 
+  max-width:416px;
+  text-align: center; 
+  background-color: #0f0f0f;
+  text-align: start;
+}
+
+.TitleCardType1{
+  padding-left:10px;
+}
+.DescriptionCardType1{
+  padding-left:10px;
+}
+
+.menu{ 
+display:flex;
+flex-direction: row;
+background-color: #2b2b2b;
+width: 1400px;
+height: 100px;
+position: fixed;
+margin-top: 3%;
+margin-left: 250px;
+text-decoration: none ;
+
+
+}
+.menu {
+ align-items: center;
+ text-decoration: none;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none; 
+  margin-left: -40px;
+  
+  text-decoration: none;
+  
+}
+
+.menu li a {
+  margin: 40px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.LogoMenu{
+  margin-left: 30px;
+  margin-right: -10px;
+}
+
+
+
+
+.FirstFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 720px;
+  padding-left: 600px;
+
+  
+}
+
+.OfferDucati{
+  display: flex;
+  flex-direction: column; 
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  padding: 40px; 
+  width: 1200px;
+  padding-left: 300px;
+  
+  
+}
+.Terms {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+ 
+}
+
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.SecondFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6000px;
+  background-color: #0f0f0f;
+  
+}
+
+.Terms {
+  margin: 10px 0;
+  
+}
+
+.Elementos {
+  margin: 5px 0;
+  padding-right: 55px;
+  padding-bottom: 30px;
+}
+
+.SocialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+.Imagen {
+  width: 50px;
+  margin: 0 10px;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+ 
+}
+
