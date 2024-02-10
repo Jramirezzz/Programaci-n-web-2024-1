@@ -17,12 +17,12 @@ export default function App (){
       <Carousel/>
       <CardType1/>
       <CardType6/>
-      <h1>Gama Ducati</h1>
+      <h1 className="FirstTitle">Gama Ducati</h1>
       <CardType5/>
-      <h1>Destacados</h1>
+      <h1 className="SecondTitle">Destacados</h1>
       <CardType4/>
       <CardType3/>
-     <h1>Disfruta al máximo de Ducati</h1>
+     <h1 className="ThirdTitle">Disfruta al máximo de Ducati</h1>
       <CardType2/>
       <Footer/>
       </>

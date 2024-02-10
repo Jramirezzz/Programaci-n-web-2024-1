@@ -36,6 +36,8 @@
   
 }
 
+
+
 .menu li a {
   margin: 30px;
   color: #ffffff;
@@ -127,25 +129,24 @@
 }
 
 .CardType2Container {
-  
+  width: 1850px;
   display: flex;
   justify-content: center;
   
   
 }
-
+.ImgCardType2{
+  width: 99%;
+}
 .ContainerImgCardType2{
   position: relative;
   text-align: center;
-  max-width: 100%;
- 
-  
-  
+  width: 1500px;
 }
 
 .TitleCardType2{
   position: absolute;
-  top: 70px;
+  top: 45px;
   left: 0;
   right: 0;
   left: 0;
@@ -260,8 +261,15 @@
   align-items: center; 
  
 }
+.FirstElement{
+padding-bottom: -100px;
+color: #666;
 
+}
+.FirstFooter{
+  font-size: 15px;
 
+}
 .Footer {
   display: flex;
   justify-content: center;
@@ -271,6 +279,7 @@
 }
 
 .SecondFooter {
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -288,6 +297,7 @@
   margin: 5px 0;
   padding-right: 55px;
   padding-bottom: 30px;
+  color: #666;
 }
 
 .IconsContainer {
@@ -303,6 +313,15 @@
   margin: 0 10px;
 }
 
+.InputCorreo{
+  width: 500px;
+  height: 60px;
+  font-size: 15px;
+  background-color: #0f0f0f;
+  border-color: white;
+  border: 0.5px solid white;
+  border-radius: 1px;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

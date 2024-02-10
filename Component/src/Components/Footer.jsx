@@ -34,15 +34,16 @@ export function Footer(){
     return(
       <footer>
       <div className="FirstFooter">
-          <h3> Suscripción al boletín informativo</h3>
-            <p>Introducir tu dirección de correo electrónico para estar siempre actualizado sobre las novedades y las promociones Ducati.</p>
-            <p>Puedes completar tu suscripción y crear tu perfil en Ducati.com en cualquier momento para recibir comunicaciones personalizadas y acceder a todas las funciones.</p>
-            <p>Declaro haber leído la nota informativa redactada según el art. 13 del Reglamento UE 2016/679 sobre la protección de datos personales ("Reglamento") y autorizo el tratamiento de mi dirección de correo electrónico para los fines antes indicados.</p>
+          <h3 className="FirstElement" > Suscripción al boletín informativo</h3>
+            <p className="FirstElement">Introducir tu dirección de correo electrónico para estar siempre actualizado sobre las novedades y las promociones Ducati.</p>
+            <p className="FirstElement">Puedes completar tu suscripción y crear tu perfil en Ducati.com en cualquier momento para recibir comunicaciones personalizadas y acceder a todas las funciones.</p>
+            <p className="FirstElement">Declaro haber leído la nota informativa redactada según el art. 13 del Reglamento UE 2016/679 sobre la protección de datos personales ("Reglamento") y autorizo el tratamiento de mi dirección de correo electrónico para los fines antes indicados.</p>
           
-              <input placeholder="Escribe tu correo  electrónico"/>
+              <input className="InputCorreo" placeholder="  TU CORREO ELECTRÓNICO"/> 
               <Button/>
              
-                <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+             
+                <p className="Elementos">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
 
                 
               </div>
@@ -60,7 +61,7 @@ export function Footer(){
               <p className="Elementos">INFORMACION DE PRIVACIDAD</p>
               <p className="Elementos">INFORMACION SOBRE LAS COOKIES</p>
             </section>
-              <p>
+              <p className="Elementos">
                 Copyright © 2024 Ducati Motor Holding S.p.A – A Sole Shareholder Company - A Company subject to the
                  Management and Coordination activities of AUDI AG. All rights reserved. VAT 05113870967
               </p>

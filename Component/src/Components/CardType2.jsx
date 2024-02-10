@@ -19,15 +19,13 @@ const CardInfo = [
 export function CardType2 (){
   return(
     <div className="CardType2Container">
-    
     {CardInfo.map(({img,Title}) => { 
   return(
     
         <div className="ContainerImgCardType2">
-            <img style={{width:"768px",height:"200px"}}src ={img} alt="card"/>
+            <img className="ImgCardType2"src ={img} alt="card"/>
             <h4 className="TitleCardType2">{Title}</h4>
         </div>
-    
   )
     })}
     </div>
