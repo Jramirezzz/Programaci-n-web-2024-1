@@ -34,7 +34,7 @@ export function Footer(){
     return(
       <footer>
       <div className="FirstFooter">
-          <h3 className="FirstElement" > Suscripción al boletín informativo</h3>
+          <h3 className="Suscription" > Suscripción al boletín informativo</h3>
             <p className="FirstElement">Introducir tu dirección de correo electrónico para estar siempre actualizado sobre las novedades y las promociones Ducati.</p>
             <p className="FirstElement">Puedes completar tu suscripción y crear tu perfil en Ducati.com en cualquier momento para recibir comunicaciones personalizadas y acceder a todas las funciones.</p>
             <p className="FirstElement">Declaro haber leído la nota informativa redactada según el art. 13 del Reglamento UE 2016/679 sobre la protección de datos personales ("Reglamento") y autorizo el tratamiento de mi dirección de correo electrónico para los fines antes indicados.</p>

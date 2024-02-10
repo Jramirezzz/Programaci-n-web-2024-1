@@ -22,7 +22,7 @@ export default function App (){
       <h1 className="SecondTitle">Destacados</h1>
       <CardType4/>
       <CardType3/>
-     <h1 className="ThirdTitle">Disfruta al máximo de Ducati</h1>
+      <h1 className="ThirdTitle">Disfruta al máximo de Ducati</h1>
       <CardType2/>
       <Footer/>
       </>

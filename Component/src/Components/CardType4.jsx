@@ -27,8 +27,8 @@ export function CardType4() {
           <div className="ContainerCardType4">
             <div className="TextContainer">
               <h6 className="SectionCardType4">{Section}</h6>
-              <h4 className="TitleCardType4">{Title}</h4>
-              <h3 className="DescriptionCardType4">{Description}</h3>
+              <h3 className="TitleCardType4">{Title}</h3>
+              <h5 className="DescriptionCardType4">{Description}</h5>
               <button className="LinkCardType4">{Link}</button>
             </div>
             <div className="ImageContainer">
