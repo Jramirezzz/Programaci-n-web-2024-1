@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family:  Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -192,7 +192,7 @@ align-items: center;
 
 .TitleCarousel{ 
   position: absolute; 
-  
+
 }
 
 .DescriptionCarousel{
@@ -204,6 +204,7 @@ align-items: center;
 
 .SecondDescriptionCarousel{
   position: absolute;
+  
 }
 
 .ButtonCarousel{
