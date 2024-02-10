@@ -12,6 +12,25 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none; 
+  margin-left: -40px;
+  
+}
+
+.menu li a {
+  margin: 40px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.LogoMenu{
+  margin-left: 30px;
+  margin-right: -10px;
+}
 
 .BigContainerCardType6{
   display: flex;
@@ -28,7 +47,7 @@
 
 .BigContainerCardType4 {
   display: flex;
-  flex-direction: column; /* Alinea los elementos en columna */
+  flex-direction: column; 
   align-items: center; 
 }
 
@@ -129,28 +148,27 @@
   padding-left:10px;
 }
 
-.menu {
-  background-color: #333; 
-  overflow: hidden; 
+.menu{ 
+z-index: 10;
+display:flex;
+flex-direction: row;
+background-color: #2b2b2b;
+width: 1400px;
+height: 100px;
+position: fixed;
+margin-top: 3%;
+margin-left: 250px;
+text-decoration: none ;
+align-items: center;
+
 }
 
-.menu ul {
-  list-style-type: none; 
-  margin: 0;
-  padding: 0;
+.slider{
+  z-index: 1;
 }
 
-.menu ul li {
-  float: left; 
-}
 
-.menu ul li a {
-  display: block;  
-  color: white; 
-  text-align: center; 
-  padding: 14px 16px; 
-  text-decoration: none;
-}
+
 
 
 .FirstFooter {
