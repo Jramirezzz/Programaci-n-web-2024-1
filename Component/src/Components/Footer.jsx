@@ -68,7 +68,7 @@ export function Footer(){
                   {
                     Icons.map(({img}) => {
                       return(
-                      <div className="SocialIcons">
+                      <div className="Icons">
                         <img className="Imagen" src={img} />
                         
                       </div>
