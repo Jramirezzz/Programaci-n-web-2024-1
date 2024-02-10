@@ -64,8 +64,9 @@ export function Footer(){
                 Copyright © 2024 Ducati Motor Holding S.p.A – A Sole Shareholder Company - A Company subject to the
                  Management and Coordination activities of AUDI AG. All rights reserved. VAT 05113870967
               </p>
-
+              <div className="IconsContainer">
                   {
+                    
                     Icons.map(({img}) => {
                       return(
                       <div className="Icons">
@@ -74,7 +75,8 @@ export function Footer(){
                       </div>
                       )
                     })
-}
+                  }
+              </div>
         </div>
       </div>
    </footer>

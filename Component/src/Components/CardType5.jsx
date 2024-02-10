@@ -87,7 +87,7 @@ export function CardType5 (){
   return(
     <div className="ContainerImgCardType5">
         <img style={{width:"600px", height:"389px"}}src ={img} alt="card"/>
-        <h4>{Title}</h4>
+        <h4 className="TitleCardType5">{Title}</h4>
       </div>
   )
     })}

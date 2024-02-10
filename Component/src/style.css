@@ -12,6 +12,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.menu{ 
+  z-index: 10;
+  display:flex;
+  flex-direction: row;
+  background-color: #2b2b2b;
+  width: 1400px;
+  height: 100px;
+  position: fixed;
+  margin-top: 3%;
+  margin-left: 250px;
+  text-decoration: none ;
+  align-items: center;
+  
+  }
+
 .menu ul {
   display: flex;
   flex-direction: row;
@@ -22,7 +37,7 @@
 }
 
 .menu li a {
-  margin: 40px;
+  margin: 30px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -33,16 +48,27 @@
 }
 
 .BigContainerCardType6{
+  width: 1850px;
+  height: 500px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap; /* Ensure content lays out in a single row */
+  justify-content: flex-start; /* Adjust as needed */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden;
+  
+}
+.TitleCardType5{
+  padding-left: 100px;
 }
 
-
 .BigContainerCardType5{
+  width: 1850px;
+  height: 500px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap; /* Ensure content lays out in a single row */
+  justify-content: flex-start; /* Adjust as needed */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Disable vertical scrolling */
 }
 
 .BigContainerCardType4 {
@@ -148,20 +174,7 @@
   padding-left:10px;
 }
 
-.menu{ 
-z-index: 10;
-display:flex;
-flex-direction: row;
-background-color: #2b2b2b;
-width: 1400px;
-height: 100px;
-position: fixed;
-margin-top: 3%;
-margin-left: 250px;
-text-decoration: none ;
-align-items: center;
 
-}
 
 .slider{
   z-index: 1;
@@ -277,7 +290,7 @@ align-items: center;
   padding-bottom: 30px;
 }
 
-.SocialIcons {
+.IconsContainer {
   display: flex;
   justify-content: center;
   align-items: center;
