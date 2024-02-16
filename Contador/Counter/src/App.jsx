@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Button from './Components/Button/Button.jsx'
+import Counting from './Components/Counter/Counter.jsx'
 
 
 import './App.css'
@@ -12,7 +13,15 @@ const  Increment=(type)=>{
     setCounter(Counter +1 )
 }
 const Decrement=(type)=>{
-  setCounter(Counter -1)
+  if (Counter > 0) {
+    setCounter(Counter - 1);
+  } else {
+    console.log("No se puede disminuir más.");
+  }
+}
+
+const  Reset=(type)=>{
+  setCounter(0)
 }
 return (
   <>
@@ -20,7 +29,14 @@ return (
     
     <Button title="Resta" onClick={Decrement}/>
 
-      <h1>{Counter}</h1>
+    <Button title="Reset" onClick={Reset}/>
+
+
+    <Counting Counter= {Counter} />
+
+    
+    
+
 </>
 )
 
