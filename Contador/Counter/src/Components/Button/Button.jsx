@@ -4,7 +4,7 @@ export default function Button (props){
     const {onClick,type,title} = props 
     return(
         <>
-        <button className="Button"onClick={()=>onClick(type)} >
+        <button className="Add"onClick={()=>onClick(type)} >
             <p>{title}</p>
         </button>
       </>

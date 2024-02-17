@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Button from './Components/Button/Button.jsx'
 import Counting from './Components/Counter/Counter.jsx'
+import Title from './Components/Title/Title.jsx'
 
 
 import './App.css'
@@ -25,17 +26,15 @@ const  Reset=(type)=>{
 }
 return (
   <>
-    <Button title="Suma" onClick={Increment}/>
+    <Title/>
+
+    <Button title="+1 PC" onClick={Increment}/>
     
-    <Button title="Resta" onClick={Decrement}/>
+    <Button title="-1 PC" onClick={Decrement}/>
 
-    <Button title="Reset" onClick={Reset}/>
+    <Button title="Reset the Server" onClick={Reset}/>
 
-
-    <Counting Counter= {Counter} />
-
-    
-    
+    <Counting Counter={Counter} />
 
 </>
 )
