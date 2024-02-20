@@ -1,0 +1,69 @@
+.slider{
+    z-index: 1;
+    width: 1850px;
+    height: 1200px;
+    margin-bottom: 200px;
+    
+  }
+  
+  .ImgCarousel{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .LeftArrow{
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    left: 2%;
+  } 
+  
+  .RightArrow{
+    position: absolute;
+    left: 93%;
+    top: 50%;
+    width: 100px;
+  }
+  
+  .TitleCarousel{ 
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  
+  .DescriptionCarousel{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .SecondDescriptionCarousel{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    font-size: 25px;
+    font: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  .ButtonCarousel{
+    position: absolute;
+    right:  20%;
+    top: 105%;
+    background-color: #ff0000;
+    border-radius: 5px;
+    width: 180px;
+    height: 50px;
+    border-color: #ff0000;
+    font-family: sans-serif;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  

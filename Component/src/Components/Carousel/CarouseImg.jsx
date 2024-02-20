@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 
-import ArrowLeft from '../img/Left-Arrow.png'
-import ArrowRigth from '../img/Rigth-Arrow.png'
+import ArrowLeft from '../../img/Left-Arrow.png'
+import ArrowRigth from '../../img/Rigth-Arrow.png'
 
-import { DataImg } from '../const/DataImg'
+import { DataImg } from '../../const/DataImg'
+import './CarouselImg.css'
 
 export function Carousel () {
   const [current, setCurrent] = useState(0)

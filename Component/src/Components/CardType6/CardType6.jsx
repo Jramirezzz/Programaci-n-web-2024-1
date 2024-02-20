@@ -1,5 +1,6 @@
 import React from 'react'
-import { CardInfo6 } from '../const/CardInfo6'
+import { CardInfo6 } from '../../const/CardInfo6'
+import './CardType6.css'
 
 export function CardType6 () {
   return (

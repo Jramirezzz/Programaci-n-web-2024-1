@@ -1,0 +1,16 @@
+.BigContainerCardType6{
+    width: 1850px;
+    height: 580px;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    overflow-x: auto; 
+    overflow-y: hidden;
+    margin-top: 60px;
+    background-color: #0f0f0f;
+    
+  }
+  .TitleCardType6{
+    padding-left: 70px;
+  }
+  

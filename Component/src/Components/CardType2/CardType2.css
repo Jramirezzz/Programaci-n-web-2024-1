@@ -1,0 +1,24 @@
+.CardType2Container {
+    width: 1850px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .ImgCardType2{
+    width: 99%;
+    
+  }
+  .ContainerImgCardType2{
+    position: relative;
+    text-align: center;
+    width: 1500px;
+  }
+  
+  .TitleCardType2{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    left: 0;
+   
+  }

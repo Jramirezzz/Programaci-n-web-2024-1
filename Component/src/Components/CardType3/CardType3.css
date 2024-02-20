@@ -1,0 +1,22 @@
+.TitleCardType3{
+    z-index: 9;
+    position: absolute;
+     
+  }
+  .ContainerCardType3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    margin-bottom: 250px;
+    
+  }
+  
+  .GridImgCardType3 {
+    overflow: hidden; 
+  }
+  
+  .ImgCardType3 img {
+    text-align: center;
+    width: 1850px; 
+    margin-bottom: -6px;
+    height: auto; 
+  }

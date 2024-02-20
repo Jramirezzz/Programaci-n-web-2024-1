@@ -1,0 +1,31 @@
+.TitleCardType5{
+    padding-left: 100px;
+  }
+  
+  .BigContainerCardType5{
+    width: 1850px;
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    overflow-x: auto; 
+    overflow-y: hidden; 
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px; 
+    height: 5px;
+    background-color: #333; 
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ff0000; 
+    border-radius: 5px; 
+    
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ff3333; 
+  }
