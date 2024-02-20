@@ -12,6 +12,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.FirstTitle{
+  padding-left: 800px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.SecondTitle{
+  padding-left: 800px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.ThirdTitle {
+  padding-left: 700px;
+  padding-bottom: 70px;
+}
 .menu{ 
   z-index: 10;
   display:flex;
@@ -51,13 +65,18 @@
 
 .BigContainerCardType6{
   width: 1850px;
-  height: 500px;
+  height: 580px;
   display: flex;
   flex-wrap: nowrap; 
   justify-content: flex-start; 
   overflow-x: auto; 
   overflow-y: hidden;
+  margin-top: 60px;
+  background-color: #0f0f0f;
   
+}
+.TitleCardType6{
+  padding-left: 70px;
 }
 .TitleCardType5{
   padding-left: 100px;
@@ -107,7 +126,13 @@
   background-color: #0f0f0f;
   padding-bottom: 20px;
   margin-bottom: 100px;
-  border-left: 3px solid red;
+  border-left: 3px solid #c00;
+}
+.LinkCardType4{
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: transparent;
+  color: #c00;
 }
 
 .TextContainer {
@@ -189,13 +214,16 @@
   text-align: center; 
   background-color: #0f0f0f;
   text-align: start;
+  height: 480px;
 }
 
 .TitleCardType1{
   padding-left:10px;
+  font-size: 15px;
 }
 .DescriptionCardType1{
   padding-left:10px;
+  font-size: 20px;
 }
 
 
@@ -368,6 +396,8 @@ color: #666;
   border-radius: 1px;
 }
 
+
+
 @media (min-width: 680px) {
   .menu{ 
     z-index: 10;
@@ -408,7 +438,7 @@ color: #666;
   
   .BigContainerCardType6{
     width: 1850px;
-    height: 500px;
+    height: 580px;
     display: flex;
     flex-wrap: nowrap; 
     justify-content: flex-start; 

@@ -8,7 +8,7 @@ export function CardType6 () {
         return (
           <div key={id} className='ContainerCardType6'>
             <img style={{ width: '500px', height: '500px' }} src={img} alt='card' />
-            <h4>{Title}</h4>
+            <h4 className='TitleCardType6'>{Title}</h4>
           </div>
         )
       })}
