@@ -398,19 +398,20 @@ color: #666;
 
 
 
-@media (min-width: 680px) {
+@media only screen and (max-width:1024px) {
   .menu{ 
     z-index: 10;
     display:flex;
     flex-direction: row;
     background-color: #2b2b2b;
-    width: 1400px;
-    height: 100px;
+    width: 385px;
+    height: 80px;
     position: fixed;
     margin-top: 3%;
-    margin-left: 250px;
+    margin-left: 10px;
     text-decoration: none ;
     align-items: center;
+    font-size: 10px;
     
     }
   
@@ -423,17 +424,17 @@ color: #666;
     
   }
   
-  
-  
   .menu li a {
-    margin: 30px;
+    margin: 20px;
     color: #ffffff;
     text-decoration: none;
+    display: none;
   }
   
   .LogoMenu{
-    margin-left: 30px;
-    margin-right: -10px;
+    
+    margin-right: 110px;
+
   }
   
   .BigContainerCardType6{
@@ -588,10 +589,12 @@ color: #666;
   
   
   .slider{
+    background-color: #0f0f0f;
+    padding-top: 130px;
     z-index: 1;
-    width: 1850px;
-    height: 1200px;
-    margin-bottom: 200px;
+    width: 414px;
+    height: 400px;
+    
     
   }
   
@@ -602,39 +605,53 @@ color: #666;
   
   .LeftArrow{
     position: absolute;
-    top: 50%;
-    width: 100px;
+    top: 40%;
+    width: 50px;
     left: 2%;
   } 
   
   .RightArrow{
     position: absolute;
-    left: 93%;
-    top: 50%;
-    width: 100px;
+    left: 87%;
+    top: 40%;
+    width: 50px;
   }
   
   .TitleCarousel{ 
-    position: absolute; 
+    position: absolute;
+    font-size: 15px;
+    top: 260px;
+    left: 40px; 
   
   }
   
   .DescriptionCarousel{
     position: absolute;
-    bottom: 15%;
-    left: 50%;
-    font-size: 50px;
+    bottom: 55%;
+    left: 10%;
+    margin-right: 50px;
+    font-size: 20px;
   }
   
   .SecondDescriptionCarousel{
     position: absolute;
+    top: 255px;
+    font-size: 15px;
+    margin-left: 41px;
+    display: none;
+    
     
   }
   
   .ButtonCarousel{
     position: absolute;
-    right:  20%;
-    top: 105%;
+    right:  60%;
+    top: 50%;
+    width: 150px;
+    height: 50px;
+    font-size: 12px;
+    border: none;
+    border-radius: 2px;
     
   }
   
