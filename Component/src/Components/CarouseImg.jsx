@@ -3,32 +3,7 @@ import React, { useState } from 'react'
 import ArrowLeft from '../img/Left-Arrow.png'
 import ArrowRigth from '../img/Rigth-Arrow.png'
 
-const DataImg = [
-  {
-
-    img: 'https://images.ctfassets.net/x7j9qwvpvr5s/6OOP6qhp5jPrFwZkmt0DVo/273c4a520545cf23a3dbbb35c3668b9a/Multistrada-V4-Veicolo-Hero-short-1600x1000_7090-1.jpg?fm=webp&q=90',
-    Title: 'MULTISTRADA V4S',
-    Description: 'Ha llegado tu momento Ducati por 970.000 cop Mensuales',
-    Button: 'MÁS INFORMACIÓN'
-  },
-  {
-
-    img: 'https://images.ctfassets.net/x7j9qwvpvr5s/4sTr4yELBNXLBl0O7agNm7/0a7a99acc36bb71401a6c8af955bd28d/Ducati-Panigale-Racing-_-World-Champion-Replica-2023-Limited-Edition-hero-1600x1000.jpg?fm=webp&q=90',
-    TItle: ' DUCATI CORSE SPECIAL SERIES',
-    Description: 'Panigale Racing season 2023 Edicion Limitada',
-    SecondDescription: 'Cuatro Panigale V4 y una panigale V2 prooducidas en una serie limitada y enumerada para celebrar la temporada de récord',
-    Button: 'DESCUBRIR MÁS'
-  },
-  {
-
-    img: 'https://images.ctfassets.net/x7j9qwvpvr5s/4lITSt1AkuO5jp8I0cwf3D/9eb38c042f3c72d1b4860be5989d1d61/Ducati-DesertX-Rally-DWP24-Overview-hero-1600x1000.jpg?fm=webp&q=90',
-    Title: 'DREAM WILDER',
-    Description: 'DesertX Rally',
-    SecondDescription: 'La DesertX Rally está lista para acompañarte en tus aventuras más extremas con su equipo off-road profesional de primer nivel',
-    Button: 'DESCUBRIR MÁS'
-  }
-
-]
+import { DataImg } from '../const/DataImg'
 
 export function Carousel () {
   const [current, setCurrent] = useState(0)
@@ -45,10 +20,10 @@ export function Carousel () {
       <img className='LeftArrow' onClick={prevSlide} src={ArrowLeft} alt='left-Arrow' />
       <img className='RightArrow' onClick={nextSlide} src={ArrowRigth} alt='Rigth-Arrow' />
       {
-          DataImg.map((img, index) => {
-            return current === index
+          DataImg.map((img, id) => {
+            return current === id
               ? (
-                <div key={index} className='slide'>
+                <div key={id} className='slide'>
                   <img className='ImgCarousel' src={img.img} alt='images' />
                   <h6 className='TitleCarousel'>{img.Title}</h6>
                   <h3 className='DescriptionCarousel'>{img.Description}</h3>
