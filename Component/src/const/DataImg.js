@@ -12,7 +12,7 @@ export const DataImg = [
     img: 'https://images.ctfassets.net/x7j9qwvpvr5s/4sTr4yELBNXLBl0O7agNm7/0a7a99acc36bb71401a6c8af955bd28d/Ducati-Panigale-Racing-_-World-Champion-Replica-2023-Limited-Edition-hero-1600x1000.jpg?fm=webp&q=90',
     TItle: ' DUCATI CORSE SPECIAL SERIES',
     Description: 'Panigale Racing season 2023 Edicion Limitada',
-    SecondDescription: 'Cuatro Panigale V4 y una panigale V2 prooducidas en una serie limitada y enumerada para celebrar la temporada de récord',
+    SecondDescription: 'Cuatro Panigale V4 y una panigale V2 producidas en una serie limitada y enumerada para celebrar la temporada de récord',
     Button: 'DESCUBRIR MÁS',
     id: crypto.randomUUID()
   },
