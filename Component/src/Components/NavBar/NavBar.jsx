@@ -1,5 +1,6 @@
 import React from 'react'
-import logoMenu from '../img/menu.png'
+import logoMenu from '../../img/menu.png'
+import './NavBar.css'
 
 export function NavBar () {
   return (
