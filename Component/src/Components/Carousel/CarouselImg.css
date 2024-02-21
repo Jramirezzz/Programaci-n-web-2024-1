@@ -3,9 +3,7 @@
     width: 1850px;
     height: 1200px;
     margin-bottom: 200px;
-    
   }
-  
   .ImgCarousel{
     width: 100%;
     height: 100%;
@@ -44,7 +42,7 @@
   
   .SecondDescriptionCarousel{
     position: absolute;
-    top: 75%;
+    top: 85%;
     left: 50%;
     font-size: 25px;
     font: lighter;

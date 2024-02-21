@@ -4,6 +4,11 @@
     flex-wrap: wrap;
     
   }
+
+  .ImgCardType1{
+    width: 416px;
+    height: 230px;
+  }
   
   .ContainerCardType1 {
     flex: 1; 
@@ -25,26 +30,40 @@
 
 @media only screen and (max-width:1024px) {
   
-.ContainerCardType1 {
+  .BigContainerCardType1 {
     display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: #0f0f0f;
-    margin-bottom: 50px;
-    border-left: 5px solid red;
+    flex-direction: column; 
+  }
+  
+  .ContainerCardType1 {
+    display: flex; 
+    max-width: 400px;
+    height: 120px;
+    align-items: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .imageContinerType1 {
+    margin-right: 20px; 
+  }
+
+  .TitleCardType1{
+    font-size: 10px;
+  }
+
+  .DescriptionCardType1{
+    font-size: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
   }
   
   .ImgCardType1 {
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 115px;
+    
   }
   
-  .TitleCardType1 {
-    font-size: 10px;
-    margin-left: 20px;
-  }
-  
-  .DescriptionCardType1 {
-    font-size: 5px;
+  .Cardtype1 {
+    flex-grow: 1; 
   }
 }

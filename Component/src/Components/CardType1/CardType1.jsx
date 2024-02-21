@@ -9,9 +9,8 @@ export function CardType1 () {
         return (
           <div key={id} className='ContainerCardType1'>
             <div className='imageContinerType1'>
-              <img className='ImgCardType1' style={{ width: '416px', height: '230px' }} src={img} alt='card' />
+              <img className='ImgCardType1' style={{ maxHeight: '300px', maxWidth: '430px' }} src={img} alt='card' />
             </div>
-
             <div className='Cardtype1'>
               <h4 className='TitleCardType1'>{Title}</h4>
               <h3 className='DescriptionCardType1'> {Description}</h3>

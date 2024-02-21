@@ -16,13 +16,17 @@
   @media only screen and (max-width:1024px) {
     
     .BigContainerCardType6{
-      width: 1850px;
-      height: 580px;
+      width: 400px;
+      height: 450px;
       display: flex;
       flex-wrap: nowrap; 
       justify-content: flex-start; 
       overflow-x: auto; 
       overflow-y: hidden;
       
+    }
+    .ImgCardType6{
+      width: 370px;
+      height: 350px;
     }
   }

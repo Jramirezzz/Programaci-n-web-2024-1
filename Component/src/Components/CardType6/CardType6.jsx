@@ -8,7 +8,7 @@ export function CardType6 () {
       {CardInfo6.map(({ img, Title, id }) => {
         return (
           <div key={id} className='ContainerCardType6'>
-            <img style={{ width: '500px', height: '500px' }} src={img} alt='card' />
+            <img className='ImgCardType6' src={img} alt='card' />
             <h4 className='TitleCardType6'>{Title}</h4>
           </div>
         )
