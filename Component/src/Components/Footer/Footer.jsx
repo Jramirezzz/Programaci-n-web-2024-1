@@ -24,7 +24,7 @@ export function Footer () {
 
       <div className='Footer'>
         <div className='SecondFooter'>
-          <img style={{ width: '600px', paddingTop: '80px', paddingBottom: '80px' }} src='https://images.ctfassets.net/x7j9qwvpvr5s/2CsA99p11kL3UvzN4txafd/832dabdc0d00a62a43fe559933a46c35/Ducati-Member-of-the-Audi-Group.svg' alt='Ducati logo' />
+          <img className='ImgSecondFooter' src='https://images.ctfassets.net/x7j9qwvpvr5s/2CsA99p11kL3UvzN4txafd/832dabdc0d00a62a43fe559933a46c35/Ducati-Member-of-the-Audi-Group.svg' alt='Ducati logo' />
           <section className='Terms'>
             <p className='Elementos'>TERMS OF USE</p>
             <p className='Elementos'>INFORMACION DE PRIVACIDAD</p>

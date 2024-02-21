@@ -51,7 +51,9 @@
       width: 400px; 
       height: 295px;
       background-color: #0f0f0f;
-      border-left: 3px solid red;
+      border-top:  3px solid red;
+      border-left: transparent;
+      margin-top: -80px;
       
     }
     .TextContainer {
