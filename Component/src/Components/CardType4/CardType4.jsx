@@ -16,7 +16,7 @@ export function CardType4 () {
               <button className='LinkCardType4'>{Link}</button>
             </div>
             <div className='ImageContainer'>
-              <img style={{ width: '500px', height: '270px', marginTop: '26px' }} className='ImgCardType4' src={img} alt='card' />
+              <img className='ImgCardType4' src={img} alt='card' />
             </div>
           </div>
         )

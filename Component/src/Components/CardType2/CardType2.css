@@ -1,4 +1,4 @@
-.CardType2Container {
+.BigCardType2Container {
     width: 1850px;
     display: flex;
     justify-content: center;
@@ -27,26 +27,27 @@
 
   @media only screen and (max-width:1024px) {
 
-    .CardType2Container {
-      width: 1850px;
+    .BigCardType2Container {
+      width: 400px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      margin-bottom: -500px;
       
       
     }
     .ImgCardType2{
-      width: 99%;
+      width: 400px;
       
     }
     .ContainerImgCardType2{
       position: relative;
       text-align: center;
-      width: 1500px;
+      width: 400px;
     }
     
     .TitleCardType2{
       position: absolute;
-      top: 45px;
+      top: 24px;
       left: 0;
       right: 0;
       left: 0;

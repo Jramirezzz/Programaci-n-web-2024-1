@@ -4,7 +4,7 @@ import './CardType2.css'
 
 export function CardType2 () {
   return (
-    <div className='CardType2Container'>
+    <div className='BigCardType2Container'>
       {CardInfo2.map(({ img, Title, id }) => {
         return (
 

@@ -4,12 +4,12 @@ import './CardType3.css'
 
 export function CardType3 () {
   return (
-    <div className='ContainerCardType3'>
+    <div className='BigContainerCardType3'>
       {CardInfo3.map(({ img, Title, id }) => {
         return (
-          <div key={id} className='GridImgCardType3'>
-            <div className='ImgCardType3'>
-              <img style={{ width: '1000px', height: '700px' }} src={img} alt='card' />
+          <div key={id} className=''>
+            <div className='ContainerCardType3'>
+              <img className='ImgCardType3' src={img} alt='card' />
               <h4 className='TitleCardType3'>{Title}</h4>
             </div>
           </div>

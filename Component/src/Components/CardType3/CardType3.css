@@ -3,14 +3,14 @@
     position: absolute;
      
   }
-  .ContainerCardType3 {
+  .BigContainerCardType3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     margin-bottom: 250px;
     
   }
   
-  .GridImgCardType3 {
+  .ImgCardType3 {
     overflow: hidden; 
   }
   
@@ -24,29 +24,30 @@
   @media only screen and (max-width:1024px) {
 
     .TitleCardType3{
-      z-index: 9;
       position: absolute;
-       
-      
-     
-    }
-    .ContainerCardType3 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      margin-bottom: 250px;
-      
-    }
-    
-    .GridImgCardType3 {
-      overflow: hidden; 
-    }
-    
-    .ImgCardType3 img {
+      align-items:center ;
       text-align: center;
-      width: 1850px; 
-      margin-bottom: -6px;
-      height: auto; 
+      
     }
+
+    .BigContainerCardType3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+      height: 400px;
+      margin-bottom: 600px;
+      
+    }
+    .ContainerCardType3{
+      margin-bottom: 20px;
+      
+    }
+    .ImgCardType3 {
+      width: 400px;
+ }
+    
+    
 
   }
 
