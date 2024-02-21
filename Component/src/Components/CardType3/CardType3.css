@@ -17,9 +17,11 @@
   .ImgCardType3 img {
     text-align: center;
     width: 1850px; 
-    margin-bottom: -6px;
     height: auto; 
   }
+  .ImgCardType3 {
+    width: 930px;
+}
 
   @media only screen and (max-width:1024px) {
 

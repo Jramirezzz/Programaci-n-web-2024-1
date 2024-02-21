@@ -1,6 +1,6 @@
 .BigContainerCardType6{
     width: 1850px;
-    height: 580px;
+    height: 900px;
     display: flex;
     flex-wrap: nowrap; 
     justify-content: flex-start; 
@@ -12,6 +12,10 @@
   }
   .TitleCardType6{
     padding-left: 70px;
+  }
+  .ImgCardType6{
+    width: 800px;
+    height: 800px;
   }
   @media only screen and (max-width:1024px) {
     
