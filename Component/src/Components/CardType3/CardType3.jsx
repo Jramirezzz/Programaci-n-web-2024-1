@@ -7,7 +7,7 @@ export function CardType3 () {
     <div className='BigContainerCardType3'>
       {CardInfo3.map(({ img, Title, id }) => {
         return (
-          <div key={id} className=''>
+          <div key={id} className='SecondContainerCardType3'>
             <div className='ContainerCardType3'>
               <img className='ImgCardType3' src={img} alt='card' />
               <h4 className='TitleCardType3'>{Title}</h4>

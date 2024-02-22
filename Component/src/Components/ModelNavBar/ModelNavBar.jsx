@@ -1,12 +1,11 @@
 import React from 'react'
-
-import { CardInfo5 } from '../../const/CardInfo5'
 import './ModelNavBar.css'
+import { ModelNavBArData } from '../../const/ModelNavBar'
 
 export function ModelNavBar () {
   return (
     <div className='BigContainerModelNavBar'>
-      {CardInfo5.map(({ img, Title, id }) => {
+      {ModelNavBArData.map(({ img, Title, id }) => {
         return (
           <div key={id} className='ContainerImgModelNavBar'>
             <img className='ImgModelNavBar' src={img} alt='card' />

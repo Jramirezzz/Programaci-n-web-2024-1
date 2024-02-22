@@ -1,15 +1,27 @@
 .TitleCardType3{
     z-index: 9;
     position: absolute;
+    top: 90%;
+    left: 40%;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgb(255,255,255, .5);
+    color: black;
+ 
+    
      
   }
   .BigContainerCardType3 {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     margin-bottom: 250px;
     
   }
-  
+
+  .SecondContainerCardType3{
+    position: relative;
+  }
   .ImgCardType3 {
     overflow: hidden; 
   }

@@ -23,12 +23,12 @@
     grid-gap: 5px;
     column-gap: 5px;
     width: 1400px;
-    height: 400px;
+    height: 350px;
   }
 
   .ImgModelNavBar{
-padding-top: 10px;
-    width: 100px;
+    padding-top: 10px;
+    width: 150px;
     background-color: white;
     padding-left: 10px;
   }
