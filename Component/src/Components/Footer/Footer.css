@@ -95,6 +95,15 @@
     border-radius: 1px;
   }
 
+  .ImgSecondFooter{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 700px;
+  }
+
+ .Imagen{
+width:20px;
+ }
   @media only screen and (max-width:1024px) {
 
     .FirstFooter {

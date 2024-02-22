@@ -1,4 +1,4 @@
-export const ModelNavBArData = [
+export const ModelNavBarData = [
   {
     img: 'https://images.ctfassets.net/x7j9qwvpvr5s/7M4II3oZWdrG7qJqGO5ptK/6fc4f261c32521f14e15e14c0a1838d1/Diavel-for-Bentley-MY24-slider-card-625x405.png',
     Title: 'Diavel For Bentley',
