@@ -1,0 +1,57 @@
+.TitleModelNavBar{
+    margin-top: -8px;
+    padding-left: 20px;
+    font-size: 10px;
+  }
+  
+  .BigContainerModelNavBar{
+    width: 500px;
+    height: 500px;
+    display: flex;  
+  }
+
+  
+  .BigContainerModelNavBar{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    row-gap: 5px;
+    column-gap: 5px;
+    width: 200px;
+    margin-left: -700px;
+  }
+
+  .ImgModelNavBar{
+
+    width: 100px;
+    background-color: white;
+  }
+  
+  .ButtonModel{
+    background-color: transparent;
+    border-color: transparent;
+    padding-left: 30px;
+    font-size: 15px;
+  }
+  
+  @media only screen and (max-width:1024px) {
+    .BigContainerCardType5{
+      width: 400px;
+      height: 370px;
+      display: flex;
+      flex-wrap: nowrap; 
+      justify-content: flex-start; 
+      overflow-x: auto; 
+      overflow-y: hidden; 
+    }
+
+    .TitleCardType5{
+      padding-left: 100px;
+    }
+    
+    .ImgCardType5{
+      width: 400px;
+      height: 300px;
+    }
+
+  }
