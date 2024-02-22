@@ -1,0 +1,57 @@
+.BigCardType2Container {
+    width: 1850px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .ImgCardType2{
+    width: 99%;
+    
+  }
+  .ContainerImgCardType2{
+    position: relative;
+    text-align: center;
+    width: 1500px;
+  }
+
+  
+  
+  .TitleCardType2{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    left: 0;
+   
+  }
+
+  @media only screen and (max-width:1024px) {
+
+    .BigCardType2Container {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: -500px;
+      
+      
+    }
+    .ImgCardType2{
+      width: 400px;
+      
+    }
+    .ContainerImgCardType2{
+      position: relative;
+      text-align: center;
+      width: 400px;
+    }
+    
+    .TitleCardType2{
+      position: absolute;
+      top: 24px;
+      left: 0;
+      right: 0;
+      left: 0;
+     
+    }
+
+  }

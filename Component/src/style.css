@@ -1,0 +1,52 @@
+:root {
+  font-family:  Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.FirstTitle{
+  padding-left: 800px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.SecondTitle{
+  padding-left: 800px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.ThirdTitle {
+  margin-top: -190px;
+  padding-left: 700px;
+  padding-bottom: 70px;
+}
+
+
+@media only screen and (max-width:1024px) {
+  
+  .FirstTitle{
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .SecondTitle{
+    margin-bottom: 100px;
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .ThirdTitle {
+    margin-top: -100px;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-bottom: 5px;
+  }
+
+}
