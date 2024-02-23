@@ -48,15 +48,17 @@
 
 
     .menu{ 
+      align-items: start;
       z-index: 10;
       display:flex;
       flex-direction: column;
       background-color: #2b2b2b;
-      width: 385px;
+      width: 286px;
       height: 80px;
       position: fixed;
       margin-left: 10px;
       margin-bottom: 10px;
+      padding-left: 100px;
       }
     
     .menu ul {
@@ -70,8 +72,11 @@
     
     .LogoMenu{
       display: flex;
-     text-align: start;
+
+    
       margin-right: 95px;
+      align-items: start;
+      margin-left: -80px;
   
     }
 

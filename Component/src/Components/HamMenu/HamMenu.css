@@ -24,12 +24,13 @@
   @media only screen and (max-width:1024px) {
   
   .BigContainerHamMenu{
-    margin-top: -3px;
+    margin-top: -18px;
     width: 385px;
     height: 380px;
     display: flex;  
     background-color: white;
     flex-direction: column;
+    margin-left: -100px;
   }
 
   .TitleHamMenu{
