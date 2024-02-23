@@ -49,17 +49,13 @@ export function NavBar () {
         </ul>
         <section className='ThirdNavBar'>
           {
-             !isOpen && showMenu2 ? <HamMenu /> : showMenu ? <ModelNavBar /> : null
+             !isOpen && showMenu2 ? <HamMenu /> : showMenu ? <ModelNavBar /> : null /** Funcion  para mostrar el menu de modelos o la barra de búsqueda */
 
           }
 
         </section>
       </section>
-      <section className='SecondNavBar'>
-        {/* {
-        !showMenu ? null : <ModelNavBar />
-        } */}
-      </section>
+      <section className='SecondNavBar' />
     </nav>
   )
 }

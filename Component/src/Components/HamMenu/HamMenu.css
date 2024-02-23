@@ -20,3 +20,28 @@
     
   }
 
+
+  @media only screen and (max-width:1024px) {
+  
+  .BigContainerHamMenu{
+    margin-top: -3px;
+    width: 385px;
+    height: 380px;
+    display: flex;  
+    background-color: white;
+    flex-direction: column;
+  }
+
+  .TitleHamMenu{
+    margin-top: 1px;
+    padding-top: 5px;
+    padding-right: 20px;
+    font-size: 15px;
+    color: black;
+    align-items: start;
+    text-align: start;
+    
+  }
+}
+
+
