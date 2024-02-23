@@ -1,0 +1,22 @@
+.BigContainerHamMenu{
+    margin-top: 17.6px;
+    width: 1400px;
+    height: 50px;
+    display: flex;  
+    background-color: white;
+    flex-direction: row;
+  }
+
+  .TitleHamMenu{
+   
+    padding-top: 20px;
+    margin-top: -5px;
+    padding-left: 10px;
+    padding-right: 50px;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+    text-align: center;
+    
+  }
+
