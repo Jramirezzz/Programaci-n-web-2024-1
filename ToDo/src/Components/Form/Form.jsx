@@ -9,6 +9,8 @@ export function Form (){
                 placeholder="Add a Task">
             </input>
             <Button Title = "Add Task"/>
+    
+
             </div>
         </section>
     )

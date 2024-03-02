@@ -12,7 +12,7 @@ export function Task () {
           <div className='Container'>
             <input type='checkbox' id="check">
             </input>
-            <h2 className='Title'>{Task}</h2>
+            <h2 className='Tit'>{Task}</h2>
             
             <Button Title="Delete"/>
           </div>
