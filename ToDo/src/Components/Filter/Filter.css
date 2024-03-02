@@ -1,0 +1,6 @@
+.ContainerFilter{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 390px;
+}
