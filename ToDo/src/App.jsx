@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import {Header, Form,Filter,Task} from './Components/index'
+import {Header, Form,Filter,Task, Footer} from './Components/index'
 
 function App() {
 
@@ -10,6 +10,7 @@ function App() {
       <Form/>
       <Filter/>
       <Task/>
+      <Footer/>
     </>
   )
 }
