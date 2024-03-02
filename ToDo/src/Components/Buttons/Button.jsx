@@ -1,10 +1,10 @@
-
+import './Button.css'
 export function Button(Props){
     const {Title} = Props
     return(
         <section>
             <div className='Container'>
-            <button>{Title}</button>
+            <button className="Button">{Title}</button>
             </div>
         </section>
     )
