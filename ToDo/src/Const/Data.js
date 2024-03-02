@@ -1,18 +1,18 @@
 export const Data = [
     {
-        Task:'',
-        subTask:''
+        Task:'Comprar Mercado',
+        subTask:'Comprar Verduras'
     },
     {
-        Task:'',
-        subTask:''
+        Task:'Llevar Mascota Al Veterinario',
+        subTask:'Llevarlo A Las 3 De La Tarde'
     },
     {
-        Task:'',
-        subTask:''
+        Task:'Recoger Ropa',
+        subTask:'Recoger Ropa En La Lavanderia'
     },
     {
-        Task:'',
-        subTask:''
+        Task:'Leer',
+        subTask:'Leer Para las Electivas'
     },
 ]
