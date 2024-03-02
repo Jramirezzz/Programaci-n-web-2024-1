@@ -1,4 +1,3 @@
-import React from "react";
 
 export function Button(Props){
     const {Title} = Props
