@@ -1,0 +1,10 @@
+.BigContainer{
+    display: flex;
+    flex-direction: column;
+}
+.Container{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}

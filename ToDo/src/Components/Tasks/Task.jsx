@@ -1,19 +1,19 @@
 
 import { Data } from '../../Const/Data'
 import { Button } from '../Buttons/Button'
-
+ import './Task.css'
 
 export function Task () {
   return (
-    <div className='BigContainerCardType1'>
-      {Data.map(({  id, Task,subTask }) => {
+    <div className='BigContainer'>
+      {Data.map(({  id, Task}) => {
         return (
             <section key={id}>
-          <div className='ContainerCardType1'>
+          <div className='Container'>
             <input type='checkbox' id="check">
             </input>
             <h2>{Task}</h2>
-            <p>{subTask}</p>
+            
             <Button Title="Delete"/>
           </div>
           </section>
