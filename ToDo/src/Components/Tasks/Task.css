@@ -1,10 +1,19 @@
 .BigContainer{
     display: flex;
     flex-direction: column;
+    
 }
 .Container{
     display: flex;
-    text-align: center;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
+    width: 500px;
+    margin-left: 390px;
+    background-color: rgb(199, 196, 196);
+}
+
+.Title {
+    padding-top: 20px;
+    padding-left: -15px;
+
 }

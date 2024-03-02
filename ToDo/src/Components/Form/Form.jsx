@@ -3,7 +3,7 @@ import './form.css'
 export function Form (){
     return (
         <section>
-            <div className='container'>
+            <div className='containerForm'>
             <input
                 className="form" 
                 placeholder="Add a Task">

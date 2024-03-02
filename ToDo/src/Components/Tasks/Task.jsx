@@ -6,13 +6,13 @@ import { Button } from '../Buttons/Button'
 export function Task () {
   return (
     <div className='BigContainer'>
-      {Data.map(({  id, Task}) => {
+      {Data.map(({ id, Task}) => {
         return (
             <section key={id}>
           <div className='Container'>
             <input type='checkbox' id="check">
             </input>
-            <h2>{Task}</h2>
+            <h2 className='Title'>{Task}</h2>
             
             <Button Title="Delete"/>
           </div>
