@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import {Header} from './Components/index'
+import {Header, Form} from './Components/index'
 
 function App() {
 
   return (
     <>
       <Header/>
+      <Form/>
     </>
   )
 }
