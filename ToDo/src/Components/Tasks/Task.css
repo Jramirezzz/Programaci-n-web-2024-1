@@ -8,8 +8,10 @@
     justify-content: space-between;
     align-items: baseline;
     width: 500px;
-    margin-left: 390px;
+    margin-left: 380px;
     background-color: rgb(199, 196, 196);
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .Title {
