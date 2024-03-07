@@ -7,19 +7,22 @@ function App() {
   const [tasks, setTasks] = useState([])
 
 
-  setTasks(prevArray => [...prevArray, newTask])
-
-const newTask = {
+function AddTask (taskName) {
+  console.log(taskName);
+  const newTask = {
   id: crypto.randomUUID(),
-  name: {onsubmit},
+  name: {taskName},
   done: false
 
+ }
+ setTasks(prevArray => [...prevArray, newTask])
 }
+
 
   return (
     <>
       <Header/>
-      <Form/>
+      <Form onSubmit={AddTask} />
       <Filter/>
       <Task/>
       <Footer/>

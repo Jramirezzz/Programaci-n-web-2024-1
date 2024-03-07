@@ -3,7 +3,7 @@ import './form.css'
 // import { useTypeButton } from "../../Hooks/UseTypeButton";
 
 
-export function Form (onSubmit){
+export function Form ({onSubmit}){
     
 const [taskInput, setTaskInput] = useState('')
 
