@@ -8,12 +8,17 @@ export function Form ({onSubmit}){
 const [taskInput, setTaskInput] = useState('')
 
 const handleTaksInput = (e) => {
+    e.preventDefault();
     setTaskInput(e.target.value);
 };
 
+const handleTaks = (e) => {
+    e.preventDefault();
+    onSubmit(taskInput); }
+
     return (
         <section>
-            <form onSubmit={()=> {onSubmit(taskInput)}} > 
+            <form onSubmit={handleTaks} > 
             <div className='container-form'>
             <input
                  value={taskInput}

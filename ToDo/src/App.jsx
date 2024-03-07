@@ -8,10 +8,10 @@ function App() {
 
 
 function AddTask (taskName) {
-  console.log(taskName);
+  console.log(taskName); 
   const newTask = {
   id: crypto.randomUUID(),
-  name: {taskName},
+  name: taskName,
   done: false
 
  }
