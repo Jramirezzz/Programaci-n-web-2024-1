@@ -1,30 +1,20 @@
 import { useState } from "react";
-import {Button} from "../Buttons/Button"
 import './form.css'
 // import { useTypeButton } from "../../Hooks/UseTypeButton";
 
 
-export function Form (){
+export function Form (onSubmit){
     
-const [Task, SetTask] = useState([])
 const [taskInput, setTaskInput] = useState('')
 
 const handleTaksInput = (e) => {
     setTaskInput(e.target.value);
 };
 
-const handleAddTaks = () => {
-    if(taskInput.trim() !== ''){
-        SetTask([...Task, taskInput]);
-        setTaskInput('');
-    }
-}
-
-
     return (
         <section>
-            <form>
-            <div className='containerForm'>
+            <form onSubmit={()=> {onSubmit(taskInput)}} > 
+            <div className='container-form'>
             <input
                  value={taskInput}
                  onChange={handleTaksInput}
@@ -32,13 +22,13 @@ const handleAddTaks = () => {
                  placeholder="Add a Task">
 
                 {
-                    console.log(Task)
+                    console.log(taskInput)
                 }
                     
                 
             </input>
             
-            <Button onClick={handleAddTaks} Title = "Add Task"/>
+            <button type="submit"> add Task </button>
     
 
             </div>

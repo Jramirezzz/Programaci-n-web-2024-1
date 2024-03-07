@@ -1,5 +1,4 @@
 // import { useState } from 'react'
-import { useState } from 'react'
 import './Button.css'
 // import { useTypeButton } from '../../Hooks/UseTypeButton'
 
@@ -7,15 +6,17 @@ import './Button.css'
 
 
 export function Button(Props){
-    const [Task, SetTask] = useState([])
-
     
-    const {Title, SendInfo,ButtonType} = Props
-   const handleClick = () => SendInfo(ButtonType)
+    const {Title, onClick,type} = Props
+
+    const handleClick = () => onClick(type);
     return(
         <section>
             <div className='ContainerButton'>
-            <button className="Button"  onClick={handleClick}>{Title}</button>
+            <button className="Button"  
+                    onClick={handleClick}>
+                    {Title}
+            </button>
             </div>
         </section>
     )

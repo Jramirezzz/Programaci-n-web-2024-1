@@ -1,24 +1,36 @@
-// import { useState } from "react"
+import { useState } from "react"
 
 
-// export const useTypeButton = () => {
-//     const [ButtonType, SetButtonType] = useState('')
 
-//     const Buttons= (type ) => {
-//         if ( type === "Submit"){
-//             /** Funcion para Subir la info */
-//         }else if(type === "Delete"){
-//             /** Funcion para Eliminar la Info */
-//         }else if (type==="Delete All"){
-//             /** Funcion para Borrar todas las tareas*/
-//     }
+const useTask = () => {
 
+    const [Task, SetTask] = useState([])
 
-//     /** Crear las funciones para que sirvan los botones */
-// return {
-//     ButtonType
-// }
+    const Tasks = (type) =>{
+        if (type === "SaveArray"){
+            SaveArray()
+        }else if(type === "Delete"){
+            /**Funcion para Eliminar */
+        }else if(type === "DeleteAll"){
+            /**Funcion Para Eliminar Todo */
+        }else if(type === "PushInfo"){
+            PushInfo()
+        }
+
+    }
+
+    const SaveArray = (e) => {
+        SetTask(e.target.value);
+    };
+
+    const PushInfo = () => {
+        SetTask([...oldArray => [...oldArray,  `Nueva Tarea Agregada ${oldArray.length} `]])
+        }
+
     
-// }
+        return{
+            Task,
+            Tasks
 
-// }   
+        }
+}
