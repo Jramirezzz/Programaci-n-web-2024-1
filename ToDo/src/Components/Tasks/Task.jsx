@@ -1,24 +1,17 @@
 
 import { Data } from '../../Const/Data'
 import { Button } from '../Buttons/Button'
- import './Task.css'
+import './Task.css'
 
-export function Task () {
+export function Task (props) {
+  const {titleTask} = props 
   return (
     <div className='BigContainer'>
-      {Data.map(({ id, Task}) => {
-        return (
-            <section key={id}>
-          <div className='Container'>
-            <input type='checkbox' id="check">
-            </input>
-            <h2 className='Tit'>{Task}</h2>
-            
+      
+            <h2>{titleTask}</h2>
+          
             <Button Title="Delete"/>
           </div>
-          </section>
+         
         )
-      })}
-    </div>
-  )
 }

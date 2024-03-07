@@ -19,12 +19,21 @@ function AddTask (taskName) {
 }
 
 
+
   return (
     <>
       <Header/>
       <Form onSubmit={AddTask} />
       <Filter/>
-      <Task/>
+      <div className='BigContainer'>
+      {tasks.map(({ name,id }) => {
+        return (
+          <div key={id}>
+            <Task  titleTask={name} ></Task>
+          </div>
+        )
+      })}
+    </div>
       <Footer/>
     </>
   )
