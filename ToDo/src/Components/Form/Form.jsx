@@ -1,7 +1,5 @@
 import { useState } from "react";
 import './form.css'
-// import { useTypeButton } from "../../Hooks/UseTypeButton";
-
 
 export function Form ({onSubmit}){
     
@@ -15,28 +13,19 @@ const handleTaksInput = (e) => {
 const handleTaks = (e) => {
     e.preventDefault();
     onSubmit(taskInput); }
-
+    
     return (
         <section>
-            <form onSubmit={handleTaks} > 
-            <div className='container-form'>
-            <input
-                 value={taskInput}
-                 onChange={handleTaksInput}
-                 className="form" 
-                 placeholder="Add a Task">
-
-                {
-                    console.log(taskInput)
-                }
-                    
-                
-            </input>
-            
-            <button type="submit"> add Task </button>
-    
-
-            </div>
+            <form onSubmit={handleTaks}> 
+                <div className='container-form'>
+                    <input
+                        value={taskInput}
+                        onChange={handleTaksInput}
+                        className="form" 
+                        placeholder="Add a Task">
+                    </input>
+                    <button type="submit"> add Task </button>
+                </div>
             </form>
         </section>
     )

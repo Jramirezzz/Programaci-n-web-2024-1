@@ -9,6 +9,7 @@ export function Button(Props){
             <div className='ContainerButton'>
             <button className="Button"
                     id={uid}
+                    type = {type}
                     onClick={handleClick}>
                     {Title}
             </button>
