@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import {Header, Form, Filter, Task, Footer} from './Components/index'
+import {Header, Form, Filter, Task, Footer, Button} from './Components/index'
 
 function App() {
 
@@ -17,6 +17,12 @@ function App() {
   setTasks(prevArray => [...prevArray, newTask])
   }
 
+  const deleteTask = (taskId) => {
+    setTasks(prevTasks =>
+      prevTasks.filter(task => task.id !== taskId)
+    );
+  };
+
   const handleToggleTask = (taskId) => {
     setTasks(prevTasks =>
       prevTasks.map(task =>
@@ -32,6 +38,8 @@ function App() {
     return false;
   });
 
+   
+
   return (
     <>
       <Header/>
@@ -44,6 +52,7 @@ function App() {
               titleTask={name}
               done={done}
               onToggle={() => handleToggleTask(id)}
+              onDelete={() => deleteTask(id)}
             />
           </div>
         ))}

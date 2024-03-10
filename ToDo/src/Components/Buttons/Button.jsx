@@ -4,6 +4,7 @@ export function Button(Props){
     const {title, onClick,type,uid} = Props
 
     const handleClick = () => onClick(type);
+    
     return(
         <section>
             <div className='ContainerButton'>
