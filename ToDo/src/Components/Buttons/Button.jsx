@@ -1,19 +1,14 @@
-// import { useState } from 'react'
 import './Button.css'
-// import { useTypeButton } from '../../Hooks/UseTypeButton'
-
-
-
-
 export function Button(Props){
     
-    const {Title, onClick,type} = Props
+    const {Title, onClick,type,uid} = Props
 
     const handleClick = () => onClick(type);
     return(
         <section>
             <div className='ContainerButton'>
-            <button className="Button"  
+            <button className="Button"
+                    id={uid}
                     onClick={handleClick}>
                     {Title}
             </button>
