@@ -1,7 +1,7 @@
 import './Button.css'
 export function Button(Props){
     
-    const {Title, onClick,type,uid} = Props
+    const {title, onClick,type,uid} = Props
 
     const handleClick = () => onClick(type);
     return(
@@ -11,7 +11,7 @@ export function Button(Props){
                     id={uid}
                     type = {type}
                     onClick={handleClick}>
-                    {Title}
+                    {title}
             </button>
             </div>
         </section>
