@@ -36,6 +36,14 @@ function App() {
     );
   };
 
+  const countCompletedTasks = () => {
+    return tasks.filter(task => task).length;
+  };
+
+  const countUncompletedTask = () => {
+    return tasks.filter(task  => !task.done).length;
+  }
+
   const filteredTasks = tasks.filter(task => {
     if (filter === 'All') return true;
     if (filter === 'Completed') return task.done;
@@ -64,7 +72,10 @@ function App() {
         ))}
       </section>
       <Footer
-      allDelete = {() => deleteAllTask()}/>
+      allDelete = {() => deleteAllTask()}
+      counterAll = { countCompletedTasks()}
+      counter = {countUncompletedTask()}
+        />
     </>
   )
 }
