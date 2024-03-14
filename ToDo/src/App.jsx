@@ -1,11 +1,20 @@
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 import './App.css'
 import {Header, Form, Filter, Task, Footer} from './Components/index'
 
+const initTasks = JSON.parse(window.localStorage.getItem("tasks")) ?? [] 
+
+
 function App() {
 
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(initTasks);
   const [filter, setFilter] = useState('All');
+  
+
+
+  useEffect(() => {
+     window.localStorage.setItem("Task", JSON.stringify(tasks));
+    },[tasks]);
 
   function AddTask (taskName) {
     console.log(taskName); 
@@ -41,8 +50,8 @@ function App() {
   };
 
   const countUncompletedTask = () => {
-    return tasks.filter(task  => !task.done).length;
-  }
+    return tasks.filter(task  => task.done).length;
+  }  
 
   const filteredTasks = tasks.filter(task => {
     if (filter === 'All') return true;
@@ -59,17 +68,26 @@ function App() {
       <Form onSubmit={AddTask} />
       <Filter onChangeFilter={setFilter}/>
       <section className='BigContainer'>
-        {filteredTasks.map(({ name, id, done }) => (
-          <div key={id}>
-            <Task
-              titleTask={name}
-              done={done}
-              onToggle={() => handleToggleTask(id)}
-              onDelete={() => deleteTask(id)}
+
+        {
+        tasks.length > 0 ?  
+        (filteredTasks.map(({ name, id, done }) => (
+              <div key={id}>
+                <Task
+                  titleTask={name}
+                  done={done}
+                  onToggle={() => handleToggleTask(id)}
+                  onDelete={() => deleteTask(id)}
+                />
+              </div>
+            )))
+            : 
+              (<p>No hay tareas sarabambiche</p> )
               
-            />
-          </div>
-        ))}
+              
+          
+        }
+        
       </section>
       <Footer
       allDelete = {() => deleteAllTask()}

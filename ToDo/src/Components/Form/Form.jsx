@@ -8,12 +8,14 @@ const [taskInput, setTaskInput] = useState('')
 const handleTaksInput = (e) => {
     e.preventDefault();
     setTaskInput(e.target.value);
+
 };
 
 const handleTaks = (e) => {
     e.preventDefault();
-    onSubmit(taskInput); }
-    
+    onSubmit(taskInput); 
+    setTaskInput(""); 
+} 
     return (
         <section>
             <form onSubmit={handleTaks}> 
@@ -22,7 +24,8 @@ const handleTaks = (e) => {
                         value={taskInput}
                         onChange={handleTaksInput}
                         className="form" 
-                        placeholder="Add a Task">
+                        placeholder="Add a Task"
+                        >
                     </input>
                     <button type="submit"> add Task </button>
                 </div>
