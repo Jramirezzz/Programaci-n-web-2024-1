@@ -37,7 +37,7 @@ function App() {
       prevTasks.filter(task => !task.done))
   }
 
-  const handleToggleTask = (taskId) => {
+  const handleToggleTask = (taskId) => { // pasar check  a true o false
     setTasks(prevTasks =>
       prevTasks.map(task =>
         task.id === taskId ? { ...task, done: !task.done } : task
@@ -45,7 +45,7 @@ function App() {
     );
   };
 
-  const countCompletedTasks = () => {
+  const getCompletedCount = () => {
     return tasks.filter(task => task).length;
   };
 
@@ -54,10 +54,9 @@ function App() {
   }  
 
   const filteredTasks = tasks.filter(task => {
-    if (filter === 'All') return true;
-    if (filter === 'Completed') return task.done;
-    if (filter === 'Pending') return !task.done;
-    return false;
+    if (filter === 'completed') return task.done;
+    if (filter === 'pending') return !task.done;
+    return task;
   });
 
    
@@ -82,7 +81,7 @@ function App() {
               </div>
             )))
             : 
-              (<p>No hay tareas sarabambiche</p> )
+              (<p>No hay tareas</p> )
               
               
           
@@ -91,7 +90,7 @@ function App() {
       </section>
       <Footer
       allDelete = {() => deleteAllTask()}
-      counterAll = { countCompletedTasks()}
+      counterAll = { getCompletedCount()}
       counter = {countUncompletedTask()}
         />
     </>

@@ -15,7 +15,10 @@ const handleTaks = (e) => {
     e.preventDefault();
     onSubmit(taskInput); 
     setTaskInput(""); 
+    
 } 
+ const submitIsDisable = taskInput.trim().length === 0
+
     return (
         <section>
             <form onSubmit={handleTaks}> 
@@ -27,7 +30,9 @@ const handleTaks = (e) => {
                         placeholder="Add a Task"
                         >
                     </input>
-                    <button type="submit"> add Task </button>
+                    <button type="submit" disabled= {submitIsDisable}> 
+                    add Task
+                     </button>
                 </div>
             </form>
         </section>

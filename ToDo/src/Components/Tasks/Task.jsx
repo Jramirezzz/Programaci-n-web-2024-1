@@ -3,9 +3,14 @@ import './Task.css'
 
 export function Task (props) {
 
-  const { titleTask, done, onToggle,onDelete } = props 
+  const { 
+     titleTask,
+     done, 
+     onToggle,
+     onDelete 
+    } = props 
 
-  const handleCheckboxChange = () => {
+  const handleCheckboxChange = (e) => {
     onToggle();
   };
 
@@ -18,7 +23,8 @@ export function Task (props) {
         onChange={handleCheckboxChange} 
       />
       <h2>{titleTask}</h2>
-      < Button title="Delete" onClick = {onDelete}/>
+      < Button title="Delete" 
+              onClick={onDelete}/>
     </article>     
     )
 }
