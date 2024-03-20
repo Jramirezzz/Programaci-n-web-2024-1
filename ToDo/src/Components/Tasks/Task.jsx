@@ -10,7 +10,7 @@ export function Task (props) {
      onDelete 
     } = props 
 
-  const handleCheckboxChange = (e) => {
+  const handleCheckboxChange = () => {
     onToggle();
   };
 

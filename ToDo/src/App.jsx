@@ -4,17 +4,13 @@ import {Header, Form, Filter, Task, Footer} from './Components/index'
 
 const initTasks = JSON.parse(window.localStorage.getItem("tasks")) ?? [] 
 
-
 function App() {
-
   const [tasks, setTasks] = useState(initTasks);
   const [filter, setFilter] = useState('All');
   
-
-
   useEffect(() => {
-     window.localStorage.setItem("Task", JSON.stringify(tasks));
-    },[tasks]);
+     window.localStorage.setItem("tasks", JSON.stringify(tasks));
+  },[tasks]);
 
   function AddTask (taskName) {
     console.log(taskName); 
@@ -54,12 +50,10 @@ function App() {
   }  
 
   const filteredTasks = tasks.filter(task => {
-    if (filter === 'completed') return task.done;
-    if (filter === 'pending') return !task.done;
+    if (filter === 'Completed') return task.done;
+    if (filter === 'Pending') return !task.done;
     return task;
   });
-
-   
 
   return (
     <>
@@ -67,8 +61,7 @@ function App() {
       <Form onSubmit={AddTask} />
       <Filter onChangeFilter={setFilter}/>
       <section className='BigContainer'>
-
-        {
+      {
         tasks.length > 0 ?  
         (filteredTasks.map(({ name, id, done }) => (
               <div key={id}>
@@ -80,19 +73,15 @@ function App() {
                 />
               </div>
             )))
-            : 
-              (<p>No hay tareas</p> )
-              
-              
-          
-        }
-        
+        : 
+        (<p>No hay tareas</p> )
+      }
       </section>
       <Footer
       allDelete = {() => deleteAllTask()}
       counterAll = { getCompletedCount()}
       counter = {countUncompletedTask()}
-        />
+      />
     </>
   )
 }
