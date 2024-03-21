@@ -1,59 +1,25 @@
-import { useState, useEffect} from 'react'
+import {useTask} from "../src/Hooks/useTask.js"
 import './App.css'
+import { TaskContexProvider } from "./Context/TaskContextProvider.jsx"
 import {Header, Form, Filter, Task, Footer} from './Components/index'
 
-const initTasks = JSON.parse(window.localStorage.getItem("tasks")) ?? [] 
 
 function App() {
-  const [tasks, setTasks] = useState(initTasks);
-  const [filter, setFilter] = useState('All');
+
+  const {
+    tasks,
+    AddTask,
+    deleteTask,
+    deleteAllTask,
+    handleToggleTask,
+    setFilter,
+    getCompletedCount,
+    countUncompletedTask,
+    filteredTasks
   
-  useEffect(() => {
-     window.localStorage.setItem("tasks", JSON.stringify(tasks));
-  },[tasks]);
-
-  function AddTask (taskName) {
-    console.log(taskName); 
-    const newTask = {
-    id: crypto.randomUUID(),
-    name: taskName,
-    done: false
-  }
-  setTasks(prevArray => [...prevArray, newTask])
-  }
-
-  const deleteTask = (taskId) => {
-    setTasks(prevTasks =>
-      prevTasks.filter(task => task.id !== taskId)
-    );
-  };
-
-  const deleteAllTask = () => {
-    setTasks(prevTasks => 
-      prevTasks.filter(task => !task.done))
-  }
-
-  const handleToggleTask = (taskId) => { // pasar check  a true o false
-    setTasks(prevTasks =>
-      prevTasks.map(task =>
-        task.id === taskId ? { ...task, done: !task.done } : task
-      )
-    );
-  };
-
-  const getCompletedCount = () => {
-    return tasks.filter(task => task).length;
-  };
-
-  const countUncompletedTask = () => {
-    return tasks.filter(task  => task.done).length;
-  }  
-
-  const filteredTasks = tasks.filter(task => {
-    if (filter === 'Completed') return task.done;
-    if (filter === 'Pending') return !task.done;
-    return task;
-  });
+  } = useTask()
+  
+  const importTask = tasks.length > 0 
 
   return (
     <>
@@ -61,8 +27,9 @@ function App() {
       <Form onSubmit={AddTask} />
       <Filter onChangeFilter={setFilter}/>
       <section className='BigContainer'>
-      {
-        tasks.length > 0 ?  
+      { 
+      importTask ? 
+         
         (filteredTasks.map(({ name, id, done }) => (
               <div key={id}>
                 <Task
@@ -75,7 +42,7 @@ function App() {
             )))
         : 
         (<p>No hay tareas</p> )
-      }
+}
       </section>
       <Footer
       allDelete = {() => deleteAllTask()}
