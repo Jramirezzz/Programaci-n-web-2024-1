@@ -4,7 +4,7 @@ import { taskContext } from "./taskContex";
 
 const initTasks = JSON.parse(window.localStorage.getItem("tasks")) ?? [] 
 
-export function TaskContexProvider ({children}) {
+export function TaskContextProvider ({children}) {
 
   const [tasks, setTasks] = useState(initTasks);
   const [filter, setFilter] = useState('All');

@@ -1,13 +1,18 @@
 import { useState } from 'react';
 import './Filter.css'
+import { useTask } from "../../Hooks/useTask"
 
-export function Filter (props){
-    const { onChangeFilter } = props;
+export function Filter (){
+
+    const {
+        setFilter,
+    } = useTask()
+
     const [selectedFilter, setSelectedFilter] = useState('All');
 
     const handleFilterChange = (filter) => {
         setSelectedFilter(filter);
-        onChangeFilter(filter);
+        setFilter(filter);
     };
 
     return(

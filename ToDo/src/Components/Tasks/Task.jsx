@@ -4,16 +4,15 @@ import './Task.css'
 export function Task (props) {
 
   const { 
-     titleTask,
-     done, 
-     onToggle,
-     onDelete 
-    } = props 
+    titleTask,
+    done, 
+    onToggle,
+    onDelete 
+  } = props 
 
-  const handleCheckboxChange = () => {
+  const handleCheckboxChange = (e) => {
     onToggle();
   };
-
 
   return (
     <article className='task'>
@@ -24,7 +23,8 @@ export function Task (props) {
       />
       <h2>{titleTask}</h2>
       < Button title="Delete" 
-              onClick={onDelete}/>
+              onClick={onDelete}
+      />
     </article>     
     )
 }
