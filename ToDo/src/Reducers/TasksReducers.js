@@ -9,6 +9,6 @@ export const reducerTask = (tasks, action) => {
                done: false
             }
          return(prevArray => [...prevArray, newTask])
-             }
+             }else if (action.type === TAKS_ACTIONS.)
 
     }

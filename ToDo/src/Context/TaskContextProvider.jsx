@@ -13,15 +13,14 @@ export function TaskContextProvider ({children}) {
      window.localStorage.setItem("tasks", JSON.stringify(tasks));
   },[tasks]);
 
-  function AddTask (taskName) {
-    console.log(taskName); 
-    const newTask = {
-    id: crypto.randomUUID(),
-    name: taskName,
-    done: false
-  }
-  setTasks(prevArray => [...prevArray, newTask])
-  }
+  // function AddTask (taskName) { 
+  //   const newTask = {
+  //   id: crypto.randomUUID(),
+  //   name: taskName,
+  //   done: false
+  // }
+  // setTasks(prevArray => [...prevArray, newTask])
+  // }
 
   const deleteTask = (taskId) => {
     setTasks(prevTasks =>
