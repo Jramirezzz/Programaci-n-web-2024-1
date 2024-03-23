@@ -6,13 +6,13 @@ export function Footer (){
     
     const {
         deleteAllTask,
-        getCompletedCount,
-        countUncompletedTask,
+        allTaskCount,
+        completedTaskCount,
     } = useTask()
 
     return(
             <footer className="footer">
-                <h5 className="title-footer"> {countUncompletedTask()} Tareas Completadas de {getCompletedCount()} </h5>
+                <h5 className="title-footer"> {completedTaskCount()} Tareas Completadas de {allTaskCount()} </h5>
                 <Button title="Clear All Completed" onClick ={deleteAllTask }/>
             </footer>
     )
