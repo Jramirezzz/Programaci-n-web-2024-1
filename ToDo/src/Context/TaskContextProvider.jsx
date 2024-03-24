@@ -1,5 +1,5 @@
 import { useReducer, useEffect, useState } from "react";
-import { taskContext } from "./taskContex";
+import { TaskContext } from "./TaskContex";
 import { TASK_ACTIONS } from "../Const/TaskAction";
 import { reducerTask } from "../Reducers/TasksReducers";
 
@@ -14,11 +14,14 @@ export function TaskContextProvider ({children}) {
      window.localStorage.setItem("tasks", JSON.stringify(tasks));
   },[tasks]);
 
-  const AddTask = (taskName) => { 
+  const AddTask = (taskName, taskDate) => { 
 
     dispatchTasks({
       type: TASK_ACTIONS.CREATE_TASK,
-      payload: taskName
+      payload: {
+        taskName,
+        taskDate
+      }
     })
   }
 
@@ -55,7 +58,7 @@ export function TaskContextProvider ({children}) {
 
 
   return(
-    <taskContext.Provider value = {{
+    <TaskContext.Provider value = {{
         tasks,
         AddTask,
         deleteTask,
@@ -66,10 +69,9 @@ export function TaskContextProvider ({children}) {
         allTaskCount,
         completedTaskCount,
         filteredTasks
-
     }}> 
     {children}
-    </taskContext.Provider>
+    </TaskContext.Provider>
   )
 
 }

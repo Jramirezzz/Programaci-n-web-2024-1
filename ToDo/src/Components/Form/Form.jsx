@@ -8,36 +8,50 @@ const {
 } = useTask()
     
 const [taskInput, setTaskInput] = useState('')
+const [dateInput, setDateInput] = useState('')
 
 const handleTaksInput = (e) => {
     e.preventDefault();
     setTaskInput(e.target.value);
 };
 
+const handleDateInput = (e) => {
+    e.preventDefault();
+    setDateInput(e.target.value);
+};
+
 const handleTaks = (e) => {
     e.preventDefault();
-    AddTask(taskInput); 
+    AddTask(taskInput, dateInput); 
     setTaskInput(""); 
-    
-} 
- const submitIsDisable = taskInput.trim().length === 0
+    setDateInput(""); 
+}
+
+ const submitIsDisable = taskInput.trim().length === 0 || dateInput.trim().length === 0;
 
     return (
-        <section>
-            <form onSubmit={handleTaks}> 
-                <div className='container-form'>
+        
+            <form onSubmit={handleTaks}>
+                <div className="inputs-div"> 
                     <input
                         value={taskInput}
                         onChange={handleTaksInput}
-                        className="form" 
-                        placeholder="Add a Task"
-                        >
+                        className="input-task" 
+                        placeholder="Add a Task">
                     </input>
-                    <button type="submit" disabled= {submitIsDisable}> 
-                    add Task
-                     </button>
+                    <input
+                        type="date"
+                        className="input-task"
+                        value={dateInput}
+                        onChange={handleDateInput}>
+                    </input>
                 </div>
+                <button 
+                    type="submit"
+                    className={`submit-btn ${submitIsDisable ? 'disabled-btn' : ''}`}
+                    disabled= {submitIsDisable}> 
+                    add Task
+                </button>
             </form>
-        </section>
     )
 }

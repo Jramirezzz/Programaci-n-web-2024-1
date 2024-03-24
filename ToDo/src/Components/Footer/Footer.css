@@ -1,9 +1,23 @@
-.footer{
+footer{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 30px;
+    width: 50vw;
+    background-color: rgb(203, 151, 252);
+        box-shadow: 0 0 .4vw rgba(115, 19, 240, 0.5), 0 0 0 .15vw transparent;
+    height: 8vh;
 }
 
-.TitleFooter{
-    padding-right: 20px;
+p{
+    font-size: 16px;
+}
+
+@media (max-width: 800px) {
+    footer{
+        gap: 30px;
+        width: 85vw;
+        height: 8vh;
+    }
 }

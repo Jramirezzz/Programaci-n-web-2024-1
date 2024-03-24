@@ -1,8 +1,29 @@
-.ContainerFilter{
+.container-filter{
     display: flex;
+    flex-direction: row;
+    background-color: rgb(203, 151, 252);
+    box-shadow: 0 0 .4vw rgba(115, 19, 240, 0.5), 0 0 0 .15vw transparent;
     justify-content: space-between;
-    width: 500px;
-    margin-left: 390px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 50vw;;
+}
+
+.filters-div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px;
+}
+ 
+
+
+.filter:active {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+    transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+}
+@media (max-width: 800px) {
+    .container-filter{
+        width: 85vw;;
+    }
 }

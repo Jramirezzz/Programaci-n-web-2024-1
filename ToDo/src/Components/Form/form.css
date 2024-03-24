@@ -1,26 +1,77 @@
-.containerForm{
+form{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    background-color: gray;
-    width: 40%;
-    height: 50px;
+    background-color: white;
+    width: 50vw;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 30%;
-
+    margin-top: 5vh;
 }
-.form{
-    margin-top: 20px;
+
+.inputs-div{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    width: 70%;
+}
+
+.input-task{
     border-radius: 5px;
-    margin-right: 50px;
     height: 25px;
     text-align: center;
-    margin-bottom: 20px;
-    
-    
-  
+    font-size: 14px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 .4vw rgba(115, 19, 240, 0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    transition: .4s;
 }
 
-.ButtonTask{
-    margin-top: 20px;
+.submit-btn{
+    background-color: rgb(203, 151, 252);
+    box-shadow: 0 0 .4vw rgba(115, 19, 240, 0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    transition: .4s;
+    margin-right: 20px;
 }
+
+.disabled-btn{
+    background-color: rgb(207, 207, 207);
+    margin-right: 20px;
+}
+
+@media (max-width: 800px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 85vw;
+        margin-top: 2vh;
+    }
+
+    .inputs-div{
+        width: 80%;
+    }
+
+    .submit-btn{
+        background-color: rgb(203, 151, 252);
+        box-shadow: 0 0 .4vw rgba(115, 19, 240, 0.5), 0 0 0 .15vw transparent;
+        border-radius: 0.4vw;
+        border: none;
+        outline: none;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    
+    .disabled-btn{
+        background-color: rgb(207, 207, 207);
+      
+        margin: 0;
+        margin-bottom: 15px;
+    }
+ }

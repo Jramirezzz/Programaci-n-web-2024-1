@@ -16,10 +16,10 @@ export function Filter (){
     };
 
     return(
-        <section className="ContainerFilter">
-            <div>
+        <section className="container-filter">
+            <div className="filters-div">
                 <input
-                    className="Input"
+                    className="filter"
                     type="radio"
                     id="All"
                     checked={selectedFilter === 'All'}
@@ -28,9 +28,9 @@ export function Filter (){
                 <label htmlFor="All">All</label>
             </div>
 
-            <div>
+            <div className="filters-div">
                 <input
-                    className="Input"
+                    className="filter"
                     type="radio"
                     id="Completed"
                     checked={selectedFilter === 'Completed'}
@@ -39,9 +39,9 @@ export function Filter (){
                 <label htmlFor="Completed">Completed</label>
             </div>
 
-            <div>
+            <div className="filters-div">
                 <input
-                    className="Input"
+                    className="filter"
                     type="radio"
                     id="Pending"
                     checked={selectedFilter === 'Pending'}

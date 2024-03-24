@@ -1,9 +1,26 @@
-.Button{
 
-    color: white;
-    background-color: red;
-    height: 40px;
-    width: 80px;
+
+.Button {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+  }
+  
+  .Button {
+    height: 25px;
     border-radius: 5px;
-    border-color: transparent;
-}
+    background-image: linear-gradient(135deg, #fc78ea 0%, #9624f3 100%);
+    box-shadow: 0 0 .4vw rgb(183, 0, 255), 0 0 0 .15vw transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+  }
+  
+  .Button:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  .Button:active {
+    opacity: 0.5;
+  }

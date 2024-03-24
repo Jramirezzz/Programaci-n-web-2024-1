@@ -5,23 +5,29 @@ export function Task (props) {
 
   const { 
     titleTask,
+    dateTask,
     done, 
     onToggle,
-    onDelete 
+    onDelete
   } = props 
 
   const handleCheckboxChange = (e) => {
     onToggle();
   };
 
+  const doneClassNameTask = done ? "task-complete" : "task-incomplete"
+
   return (
-    <article className='task'>
+    <article className={doneClassNameTask}>
       <input
         type="checkbox" 
         checked={done} 
         onChange={handleCheckboxChange} 
       />
-      <h2>{titleTask}</h2>
+      <div className="info-task">
+        <p className="task-title">{titleTask}</p>
+        <p>Deadline: {dateTask}</p>
+      </div>
       < Button title="Delete" 
               onClick={onDelete}
       />
