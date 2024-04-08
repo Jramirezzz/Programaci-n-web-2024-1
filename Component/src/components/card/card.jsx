@@ -1,10 +1,10 @@
 import './card.css'
 
-export function Card (){
+export function card (){
     return(
         <section>
             <div>
-        <img src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg" 
+        <img src="https://cataas.com/cat" 
              alt="Random cat" />
             </div>
             <div>
