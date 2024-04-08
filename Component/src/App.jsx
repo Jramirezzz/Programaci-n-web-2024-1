@@ -1,10 +1,11 @@
 import './App.css'
-import {   Fetch} from './components'
+import {   Fetch, Fetch2 } from './components'
 function App() {
 
   return (
     <>
     <Fetch/>
+    <Fetch2/>
      
     </>
   )
