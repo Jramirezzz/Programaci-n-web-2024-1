@@ -1,10 +1,10 @@
 import './App.css'
-import { Card } from './components'
+import {   Fetch} from './components'
 function App() {
 
   return (
     <>
-    <Card/>
+    <Fetch/>
      
     </>
   )
