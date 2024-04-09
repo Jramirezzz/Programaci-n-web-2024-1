@@ -1,11 +1,12 @@
 import './App.css'
-import {   Fetch, Fetch2 } from './components'
+import { CardCompleted} from './components/card/Cards'
 function App() {
 
   return (
     <>
-    <Fetch/>
-    <Fetch2/>
+    <CardCompleted/>
+    
+    
      
     </>
   )
