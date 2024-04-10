@@ -1,4 +1,5 @@
 import { useEffect,useState } from "react";
+import { Button } from "../button/button";
 
 import './card.css'
 
@@ -49,7 +50,7 @@ return (
                 ))}
             </div>
         </section>
-        <button onClick={randomFact}>Another</button>
+        <Button onClick={randomFact} title={"Another fact"}/>
     </div>
 )
 } 
