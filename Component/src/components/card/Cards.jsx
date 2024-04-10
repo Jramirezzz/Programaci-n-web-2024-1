@@ -19,6 +19,9 @@ export function CardCompleted(){
                 console.log(data);
                 setFact([data]);
                 setLoading(false);
+                const splitData = Fact[0].fact.split('').slice(0, 18).join('');
+                const imageUrl = `https://cataas.com/cat/says/${splitData}`;
+                setCatImage(imageUrl);
             } catch (error) {
                 console.error('Error al obtener los datos:', error);
             }
@@ -31,27 +34,6 @@ export function CardCompleted(){
             // Cancelar la solicitud si es necesario
         };
     }, [loading]);
-
-    useEffect(() => {
-        if (Fact.length > 0) {
-            const splitData = Fact[0].fact.split('').slice(0, 4).join('');
-            const ImageFacts = async () => {
-                try {
-                    const response = await fetch('https://cataas.com/cat/says/' + splitData);
-                    if (!response.ok) {
-                        throw new Error('No se pudo obtener los datos');
-                    }
-                    const Img = await response.json();
-                    console.log(Img);
-                    setCatImage(Img);
-                } catch (error) {
-                    console.error('Error al obtener los datos:', error);
-                }
-            };
-
-            ImageFacts();
-        }
-    }, [Fact]);
 
     const randomFact = () => {
         setLoading(true);
