@@ -1,43 +1,42 @@
 import { useEffect,useState } from "react";
 import { Button } from "../button/button";
+import { fetchCatFact } from "../data/fetcFact";
+import { fetchCatImage } from "../data/fetchImg";
 
 import './card.css'
 
 export function CardCompleted(){
     const [loading, setLoading] = useState(true);
-    const [Fact, setFact] = useState([]);
+    const [Fact, setFact] = useState([]); //""
     const [catImage, setCatImage] = useState(null);
 
     useEffect(() => {
-        const fetchFacts = async () => {
+        const fetchData = async () => {
             try {
-                const response = await fetch('https://catfact.ninja/fact');
-                if (!response.ok) {
-                    throw new Error('No se pudo obtener los datos');
-                }
-                const data = await response.json();
-                console.log(data);
-                setFact([data]);
+                const data = await fetchCatFact();
+                setFact(data.fact);
                 setLoading(false);
-                const splitData = Fact[0].fact.split('').slice(0, 18).join('');
-                const imageUrl = `https://cataas.com/cat/says/${splitData}`;
+                const imageUrl = await fetchCatImage(data.fact);
                 setCatImage(imageUrl);
             } catch (error) {
                 console.error('Error al obtener los datos:', error);
             }
         };
 
-        fetchFacts();
+        fetchData();
 
         // Clean-up: Cancelar la solicitud si el componente se desmonta antes de que se complete
         return () => {
             // Cancelar la solicitud si es necesario
         };
-    }, [loading]);
+    }, []);
 
-    const randomFact = () => {
+
+    const randomFact = async () => {
         setLoading(true);
+        await fetchData();
     };
+
 
     if(loading){
         return (
@@ -51,9 +50,7 @@ export function CardCompleted(){
         <div>
             <section>
                 <div>
-                    {Fact.map((fact, id) => (
-                        <p key={id}>{fact.fact}</p>
-                    ))}
+                    <p>{Fact}</p>
                 </div>
                 <img src={catImage} alt="" />
             </section>
