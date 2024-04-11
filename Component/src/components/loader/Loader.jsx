@@ -3,7 +3,7 @@ import './loader.css'
 
 export function Loader () {
   return (
-    <div className="loader">Loading
+    <div className="loaders">Loading
   <span></span>
 </div>
   )
