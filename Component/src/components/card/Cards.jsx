@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button,Loader,Title } from "../index";
-import { fetchCatFact } from "../data/fetcFact";
-import { fetchCatImage } from "../data/fetchImg";
-
+import { Button,Loader,Title,fetchCatFact,fetchCatImage } from "../index";
 import './card.css'
 
 export function CardCompleted() {
@@ -45,14 +42,13 @@ export function CardCompleted() {
     }
 
     return (
-        <div>
+        <div className="big-div">
             <section>
-                <div>
+                <div className="mid-div">
                 <Title/>
-
-                    <p>{fact}</p>
+                <p className="text">{fact}</p>
                 </div>
-                <img src={catImage} alt="" />
+            <img src={catImage} className="image" alt="" />
             </section>
             <Button onClick={randomFact} title={"Another fact"}/>
         </div>

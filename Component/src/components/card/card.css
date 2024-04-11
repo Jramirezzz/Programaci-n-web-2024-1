@@ -1,0 +1,12 @@
+.big-div{
+    width: 500px;
+}
+.mid-div{
+    width: 500px;
+    padding-top: 10px;
+    border-color: greenyellow;
+}
+.image{
+    width: 500px;
+    border-radius: 15px;
+}
