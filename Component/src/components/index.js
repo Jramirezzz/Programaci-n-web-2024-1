@@ -1,4 +1,5 @@
 export * from './card/Cards.jsx'
-export * from '../components/button/buttons.jsx'
+export * from '../components/button/button.jsx'
 export * from '../components/data/fetcFact.js'
 export * from '../components/data/fetchImg.js'
+export * from './loader/Loader.jsx'

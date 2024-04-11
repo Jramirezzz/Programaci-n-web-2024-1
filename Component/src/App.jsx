@@ -5,9 +5,6 @@ function App() {
   return (
     <>
     <CardCompleted/>
-    
-    
-     
     </>
   )
 }
