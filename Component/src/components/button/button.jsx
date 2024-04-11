@@ -6,7 +6,7 @@ export function Button(props){
     const handleClick = () => onClick()
   
     return (
-    <button onClick={handleClick}>
+    <button className="btn" onClick={handleClick}>
         <p>{title}</p>
       
     </button>)
