@@ -10,18 +10,17 @@ export function CardCompleted() {
     const fetchData = async () => {
         setLoading(true);
         try {
-            // const delay = 2000;
+            const delay = 1500;
                         setTimeout(async () => {
                 const data = await fetchCatFact();
                 setFact(data.fact);
                 const imageUrl = await fetchCatImage(data.fact);
                 setCatImage(imageUrl);
                 setLoading(false);
-            }, 2000);
+            }, delay);
         } catch (error) {
             console.error('Error al obtener los datos:', error);
-        }finally{
-            setLoading(false);
+            setLoading(false)
         }
     };
     
