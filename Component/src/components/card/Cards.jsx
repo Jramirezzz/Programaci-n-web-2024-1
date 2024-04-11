@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button,Loader } from "../index";
+import { Button,Loader,Title } from "../index";
 import { fetchCatFact } from "../data/fetcFact";
 import { fetchCatImage } from "../data/fetchImg";
 
@@ -11,22 +11,28 @@ export function CardCompleted() {
     const [catImage, setCatImage] = useState(null);
 
     const fetchData = async () => {
-        setLoading(true); 
+        setLoading(true);
         try {
-            const data = await fetchCatFact();
-            setFact(data.fact);
-            const imageUrl = await fetchCatImage(data.fact);
-            setCatImage(imageUrl);
+            // Simular un retraso de 2 segundos (2000 milisegundos)
+            const delay = 2000;
+            
+            // Retraso antes de realizar la solicitud fetch
+            setTimeout(async () => {
+                const data = await fetchCatFact();
+                setFact(data.fact);
+                const imageUrl = await fetchCatImage(data.fact);
+                setCatImage(imageUrl);
+                setLoading(false);
+            }, delay);
         } catch (error) {
             console.error('Error al obtener los datos:', error);
-        } finally {
-            setLoading(false); 
+            setLoading(false);
         }
     };
-
+    
     useEffect(() => {
         fetchData();
-    }, []); 
+    }, []);
 
     const randomFact = () => {
         fetchData(); 
@@ -42,6 +48,8 @@ export function CardCompleted() {
         <div>
             <section>
                 <div>
+                <Title/>
+
                     <p>{fact}</p>
                 </div>
                 <img src={catImage} alt="" />
