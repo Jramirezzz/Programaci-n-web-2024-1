@@ -1,42 +1,36 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "../button/button";
 import { fetchCatFact } from "../data/fetcFact";
 import { fetchCatImage } from "../data/fetchImg";
 
 import './card.css'
 
-export function CardCompleted(){
-    const [loading, setLoading] = useState(true);
-    const [Fact, setFact] = useState([]); //""
+export function CardCompleted() {
+    const [loading, setLoading] = useState(false);
+    const [fact, setFact] = useState(""); 
     const [catImage, setCatImage] = useState(null);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const data = await fetchCatFact();
-                setFact(data.fact);
-                setLoading(false);
-                const imageUrl = await fetchCatImage(data.fact);
-                setCatImage(imageUrl);
-            } catch (error) {
-                console.error('Error al obtener los datos:', error);
-            }
-        };
-
-        fetchData();
-
-        // Clean-up: Cancelar la solicitud si el componente se desmonta antes de que se complete
-        return () => {
-            // Cancelar la solicitud si es necesario
-        };
-    }, []);
-
-
-    const randomFact = async () => {
-        setLoading(true);
-        await fetchData();
+    const fetchData = async () => {
+        setLoading(true); // Establecer loading en true al iniciar la carga de datos
+        try {
+            const data = await fetchCatFact();
+            setFact(data.fact);
+            const imageUrl = await fetchCatImage(data.fact);
+            setCatImage(imageUrl);
+        } catch (error) {
+            console.error('Error al obtener los datos:', error);
+        } finally {
+            setLoading(false); // Establecer loading en false cuando se completa la carga de datos, ya sea exitosa o no
+        }
     };
 
+    useEffect(() => {
+        fetchData();
+    }, []); // Se ejecutará solo una vez al montar el componente
+
+    const randomFact = () => {
+        fetchData(); // Llamar a fetchData para cargar un nuevo hecho y una nueva imagen del gato
+    };
 
     if(loading){
         return (
@@ -50,7 +44,7 @@ export function CardCompleted(){
         <div>
             <section>
                 <div>
-                    <p>{Fact}</p>
+                    <p>{fact}</p>
                 </div>
                 <img src={catImage} alt="" />
             </section>
