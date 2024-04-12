@@ -6,8 +6,14 @@ export function Button(props){
     const handleClick = () => onClick()
   
     return (
-    <button className="btn" onClick={handleClick}>
+
+        <div className="container">
+		<div className="btn">
+             <button className="btn" onClick={handleClick}>
         <p>{title}</p>
       
-    </button>)
+    </button></div>
+	</div>
+    )
+    
   }
