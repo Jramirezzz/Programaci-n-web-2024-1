@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button,Loader,Title,fetchCatFact,fetchCatImage,Errors} from "../index";
+import { Button,Loader,Title,fetchCatFact,getCatImage,Errors} from "../index";
 import './card.css'
 
 export function CardCompleted() {
@@ -13,7 +13,7 @@ export function CardCompleted() {
         try {
                 const data = await fetchCatFact();
                 setFact(data.fact);
-                const imageUrl = await fetchCatImage(data.fact);
+                const imageUrl = await getCatImage(data.fact);
                 setCatImage(imageUrl);
                 setLoading(false);
         } catch (error) {

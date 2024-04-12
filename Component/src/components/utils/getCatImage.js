@@ -1,4 +1,4 @@
-export async function fetchCatImage(fact) {
+export async function getCatImage(fact) {
     try {
         const splitData = fact.split(' ').slice(0, 4).join(' ');
         const imageUrl = `https://cataas.com/cat/says/${splitData}?fontSize=50&fontColor=white`;
