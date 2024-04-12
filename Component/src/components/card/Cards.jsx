@@ -43,11 +43,11 @@ export function CardCompleted() {
     }
 
     return (
-        <div className="big-div">
+        <div className="card">
             <section>
-                <div className="mid-div">
-                <Title/>
-                <p className="text">{fact}</p>
+            <Title/>
+                <div className="card-info">
+                <p className="title">{fact}</p>
                 </div>
             <img src={catImage} className="image" alt="" />
             </section>
