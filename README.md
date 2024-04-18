@@ -1,5 +1,5 @@
 # CatsFacts
-(https://pbs.twimg.com/profile_images/1311008414156423170/Kxu_7mQS_400x400.jpg)
+![Texto alternativo](https://pbs.twimg.com/profile_images/1311008414156423170/Kxu_7mQS_400x400.jpg)
 Cats Facts is a project that reacts using an API to provide data about cats accompanied by an image
 
 ## API Reference 
