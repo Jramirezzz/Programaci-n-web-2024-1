@@ -35,6 +35,7 @@ export function Card ({searchInput}) {
   return (
    <>
    <div className='big-container'>
+    
       {
         gif.map(({id,images,title})=>{
           return(
@@ -45,6 +46,7 @@ export function Card ({searchInput}) {
           )
         })
       }
+      
    </div>
    </>
   )

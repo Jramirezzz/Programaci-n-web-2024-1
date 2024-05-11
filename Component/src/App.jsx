@@ -1,12 +1,11 @@
-import {Card, Form} from './Components/index'
 import './App.css'
+import { AppRouter } from './router/Approuter'
 
 function App() {
 
   return (
     <>
-    <Form/> 
-    <Card/>       
+    <AppRouter/>
     </>
   )
 }
