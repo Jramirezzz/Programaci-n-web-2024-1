@@ -35,3 +35,15 @@
     flex-wrap: wrap;
     margin-top: 40%;
   }
+
+  .save-image{
+    width: 20px;
+  }
+
+  .button-save{
+    background-color: transparent;
+    border-color: black;
+    border-radius: 10px;
+    width: 20%;
+
+  }

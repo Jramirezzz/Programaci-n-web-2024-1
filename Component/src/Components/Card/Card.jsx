@@ -42,6 +42,9 @@ export function Card ({searchInput}) {
             <div className="card"key={id}>
               <img src={images.fixed_width_small.url} alt={title} />
               <p>{title}</p>
+              <button className='button-save'>
+              <img className="save-image" src="../../src/assets/save-off.png"/>
+              </button>
             </div>
           )
         })
