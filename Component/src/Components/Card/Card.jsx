@@ -9,11 +9,12 @@ export function Card ({searchInput}) {
   const [Error, setError] = useState(null)
   const [favorites, setFavorites] = useState([])
 
-  const AddFavorities = (images,title) => {
-    window.localStorage.setItem("gif",JSON.stringify(gif))
-    setFavorites(images,title)
-  
-}
+  const AddFavorities = (title, imageUrl, id) => {
+    const newFavorite = { id, title, imageUrl };
+    const updatedFavorites = [...favorites, newFavorite];
+    window.localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+    setFavorites(updatedFavorites);
+  };
   
   const fetchData = async () => {
     try {
@@ -27,7 +28,6 @@ export function Card ({searchInput}) {
 
   useEffect(()=>{
     fetchData(searchInput);
-    console.log(searchInput)
   },[searchInput])
 
   if(Error){
@@ -40,6 +40,9 @@ export function Card ({searchInput}) {
       <p>Loading...</p>
     )
   }
+  const isFavorite = (id) => {
+    return favorites.some(favorite => favorite.id === id);
+  };
   
   return (
    <>
@@ -47,12 +50,13 @@ export function Card ({searchInput}) {
     
       {
         gif.map(({id,images,title})=>{
+          const isCardFavorite = isFavorite(id);
           return(
             <div className="card"key={id}>
               <img src={images.fixed_width_small.url} alt={title} />
               <p>{title}</p>
-              <button className='button-save' onClick={()=>AddFavorities(title,images.fixed_width_small.url)}>
-              <img className="save-image" src="../../src/assets/save-off.png"/>
+              <button className='button-save' onClick={()=>AddFavorities(title,images.fixed_width_small.url,id)}>
+              <img className="save-image" src={isCardFavorite ? "../src/assets/save-on.png":"../src/assets/save-off.png"}/>
               </button>
             </div>
           )

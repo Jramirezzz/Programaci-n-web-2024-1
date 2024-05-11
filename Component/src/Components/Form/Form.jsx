@@ -7,13 +7,13 @@ export function Form ({onSubmit}) {
     
 
     const handlecliclk = (e) => {
+      
         setSearchInput(e.target.value)
     }
 
     const handleSearch = (e) => {
         e.preventDefault();
         onSubmit(searchInput)
-        console.log(searchInput)
         setSearchInput(" ")
 
     }
