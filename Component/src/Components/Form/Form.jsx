@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 export function Form ({onSubmit}) {
     const [searchInput, setSearchInput] = useState('')
+    
 
     const handlecliclk = (e) => {
         setSearchInput(e.target.value)
@@ -11,10 +12,12 @@ export function Form ({onSubmit}) {
 
     const handleSearch = (e) => {
         e.preventDefault();
-        fetchGif(searchInput);
+        onSubmit(searchInput)
+        console.log(searchInput)
         setSearchInput(" ")
 
     }
+
 
   return (
     <form onSubmit={handleSearch}>
