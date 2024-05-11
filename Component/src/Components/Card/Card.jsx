@@ -5,7 +5,7 @@ import { fetchGif } from '../Service/fetchGif'
 export function Card ({searchInput}) {
   const [loading, setLoading] = useState(false)
   const [gif, setGif] = useState([])
-  const [Error, setError] = useState(null)
+  const [Error, setError] = useState()
 
   const fetchData = async () => {
     try {
