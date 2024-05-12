@@ -1,12 +1,14 @@
 import './Card.css'
 import { useEffect,useState } from 'react'
 import { fetchGif } from '../Service/fetchGif'
+import { Loader } from '../Loader/Loader'
+import { Error } from '../Error/Error'
 
 
 export function Card ({searchInput}) {
   const [loading, setLoading] = useState(false)
   const [gif, setGif] = useState([])
-  const [Error, setError] = useState(null)
+  const [error, setError] = useState()
   const [favorites, setFavorites] = useState([])
 
   const AddFavorities = (title, imageUrl, id) => {
@@ -18,11 +20,14 @@ export function Card ({searchInput}) {
   
   const fetchData = async () => {
     try {
+      setLoading(true)
      const data = await fetchGif(searchInput);
      setGif(data.data) 
     } catch (error) {
       console.error('Error al obtener datos ',error),
       setError(error)
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -30,14 +35,14 @@ export function Card ({searchInput}) {
     fetchData(searchInput);
   },[searchInput])
 
-  if(Error){
+  if(error){
     return(
-      <p>Error</p>
+      <Error/>
     )
   }
   if(loading){
     return(
-      <p>Loading...</p>
+      <Loader/>
     )
   }
   const isFavorite = (id) => {
