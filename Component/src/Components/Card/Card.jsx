@@ -3,6 +3,7 @@ import { useEffect,useState } from 'react'
 import { fetchGif } from '../Service/fetchGif'
 import { Loader } from '../Loader/Loader'
 import { Error } from '../Error/Error'
+import PropTypes from 'prop-types'
 
 
 export function Card ({searchInput}) {
@@ -72,3 +73,7 @@ export function Card ({searchInput}) {
    </>
   )
 }
+
+Card.propTypes = {
+  searchInput: PropTypes.string.isRequired
+};

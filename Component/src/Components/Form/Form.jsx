@@ -1,6 +1,6 @@
-import { fetchGif } from '../Service/fetchGif';
 import './Form.css'
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 
 export function Form ({onSubmit}) {
     const [searchInput, setSearchInput] = useState('')
@@ -42,3 +42,7 @@ export function Form ({onSubmit}) {
   </form>
   )
 }
+
+Form.propTypes = {
+  onSubmit: PropTypes.string.isRequired
+};
