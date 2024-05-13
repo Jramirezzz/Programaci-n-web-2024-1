@@ -9,6 +9,7 @@ export const Home =()  => {
 
   return (
     <>
+    {/* <NavigationBar/> */}
     <Form onSubmit={handleSearch}/> 
     <Card searchInput={searchTerm}/>       
     </>

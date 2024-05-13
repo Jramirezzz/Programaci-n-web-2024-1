@@ -19,7 +19,7 @@ export function Card ({searchInput}) {
     setFavorites(updatedFavorites);
   };
   
-  const fetchData = async () => {
+  const fetchData = async (searchInput) => {
     try {
       setLoading(true)
      const data = await fetchGif(searchInput);
