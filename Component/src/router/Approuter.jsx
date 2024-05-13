@@ -5,9 +5,7 @@ import { Home,Favorites} from "../Screen"
 
 export const AppRouter = () => {
   return (
-
     <>
-    {/* <Header /> */}
     <section>
     <Routes>
         <Route path="/" element={<Home />}/>
