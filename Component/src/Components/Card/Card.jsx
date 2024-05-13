@@ -18,6 +18,12 @@ export function Card ({searchInput}) {
     window.localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
     setFavorites(updatedFavorites);
   };
+
+  const removeFavorite = (id) => {
+    const updatedFavorites = favorites.filter(favorite => favorite.id !== id);
+    window.localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+    setFavorites(updatedFavorites);
+  };
   
   const fetchData = async (searchInput) => {
     try {
@@ -61,7 +67,7 @@ export function Card ({searchInput}) {
             <div className="card"key={id}>
               <img src={images.fixed_width_small.url} alt={title} />
               <p>{title}</p>
-              <button className='button-save' onClick={()=>AddFavorities(title,images.fixed_width_small.url,id)}>
+                <button className='button-save' onClick={() => isCardFavorite ? removeFavorite(id) : AddFavorities(title, images.fixed_width_small.url, id)}>
               <img className="save-image" src={isCardFavorite ? "../src/assets/save-on.png":"../src/assets/save-off.png"}/>
               </button>
             </div>
