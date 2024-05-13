@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Home } from "../Screen"
+import {  Route, Routes } from "react-router-dom"
+import { Home,Favorites} from "../Screen"
 
 
 
@@ -11,7 +11,7 @@ export const AppRouter = () => {
     <section>
     <Routes>
         <Route path="/" element={<Home />}/>
-        {/* <Route path="/aboutus" element={<Favorities/>}/> */}
+        <Route path="/Favorites" element={<Favorites/>}/>
     </Routes>
     </section>
     

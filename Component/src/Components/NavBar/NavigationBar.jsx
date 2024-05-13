@@ -6,7 +6,7 @@ export function NavigationBar() {
     <>
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#">Favorites</a></li>
+      <li><link to="/Favorites">Favorites</link></li>
     </ul>
     </>
   )
