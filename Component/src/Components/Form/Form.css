@@ -1,10 +1,10 @@
 .wrapper {
     --input-focus: #2d8cf0;
-    --font-color: #323232;
-    --font-color-sub: #666;
-    --bg-color: #fff;
-    --bg-color-alt: #666;
-    --main-color: #323232;
+    --font-color: #ffffff;
+    --font-color-sub: #85faec;
+    --bg-color: #076387;
+    --bg-color-alt: #003375;
+    --main-color: #85faec;
       display: flex; 
       flex-direction: column; 
       align-items: center;
@@ -25,7 +25,7 @@
     justify-content: center;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: lightgrey;
+    background: rgb(0, 0, 0);
     gap: 20px;
     border-radius: 5px;
     border: 2px solid var(--main-color);

@@ -1,3 +1,10 @@
+.loader-container {
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .loader {
     --dim: 3rem;
     width: var(--dim);
@@ -7,7 +14,7 @@
   }
   
   .loader .circle {
-    --color: #333;
+    --color: #70eeff;
     --dim: 1.2rem;
     width: var(--dim);
     height: var(--dim);

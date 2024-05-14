@@ -9,9 +9,11 @@ export const Home =()  => {
 
   return (
     <>
+    <div className='home'>
     <NavigationBar/>
     <Form onSubmit={handleSearch}/> 
-    <Card searchInput={searchTerm}/>       
+    <Card searchInput={searchTerm}/>   
+    </div>   
     </>
   )
 }
