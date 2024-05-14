@@ -12,6 +12,12 @@ export function Card ({searchInput}) {
   const [error, setError] = useState()
   const [favorites, setFavorites] = useState([])
 
+
+  useEffect(() => {
+    const savedFavorites = JSON.parse(window.localStorage.getItem('favorites')) || [];
+    setFavorites(savedFavorites);
+  }, []);
+
   const AddFavorities = (title, imageUrl, id) => {
     const newFavorite = { id, title, imageUrl };
     const updatedFavorites = [...favorites, newFavorite];

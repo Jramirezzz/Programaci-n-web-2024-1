@@ -1,20 +1,29 @@
 import './Form.css'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import PropTypes from 'prop-types'
+import debounce from 'just-debounce-it'
 
 export function Form ({onSubmit}) {
     const [searchInput, setSearchInput] = useState('')
     
+    const debounceit = useCallback(
+      
+      debounce ((e)=>{
+        onSubmit(e)
+      },500),
+     [onSubmit]
+    ) 
 
     const handlecliclk = (e) => {
-      
         setSearchInput(e.target.value)
+        debounceit(e.target.value)
     }
 
     const handleSearch = (e) => {
         e.preventDefault();
         onSubmit(searchInput)
-        setSearchInput(" ")
+        
+      
 
     }
 
